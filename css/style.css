@@ -519,3 +519,140 @@ html.lock {
 .menu__arrow:hover::after {
 		color: #000;
 }
+
+.banner {
+		margin-bottom: 40px;
+}
+.banner__wrapper {
+		padding: 0 20px;
+}
+.banner__slider {
+		margin-bottom: 18px;
+}
+.banner__slide img {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+}
+.banner__prev {
+		display: none;
+}
+.banner__next {
+		display: none;
+}
+.banner__side {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		width: 100%;
+		margin-bottom: 38px;
+}
+.banner__side-img {
+		width: 48%;
+}
+.banner__side-img img {
+		max-width: 100%;
+		width: 100%;
+}
+.banner__side-img a {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+}
+.banner__side-img a::after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 50%;
+		top: 50%;
+		left: 0;
+		right: 0;
+		background-color: #000;
+		opacity: 0.1;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+}
+.banner__side-img a:hover::after {
+		-webkit-transition: all 0.9s ease-in-out;
+		transition: all 0.9s ease-in-out;
+		top: 0;
+		bottom: 0;
+		opacity: 0;
+}
+.banner__aside-item {
+		position: relative;
+		width: 100%;
+}
+.banner__aside-item img {
+		max-width: 100%;
+		width: 100%;
+}
+.banner__aside-item:nth-child(n+2) {
+		margin-top: 20px;
+}
+.banner__aside-item a {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+}
+.banner__aside-item a::after, .banner__aside-item a::before {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		opacity: 0;
+		-webkit-transition: all 0.45s ease 0s;
+		transition: all 0.45s ease 0s;
+		background-color: rgba(255, 255, 255, 0.7);
+}
+.banner__aside-item a::before {
+		left: 0;
+		right: 100%;
+}
+.banner__aside-item a::after {
+		right: 0;
+		left: 100%;
+}
+.banner__aside-item a:hover::after {
+		left: 50%;
+		opacity: 0.7;
+}
+.banner__aside-item a:hover::before {
+		right: 50%;
+		opacity: 0.7;
+}
+.banner__content {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 30px;
+		padding-top: 51px;
+}
+.banner__title {
+		text-transform: uppercase;
+		font-size: 14px;
+		margin-bottom: 5px;
+		color: #010101;
+		line-height: 1.29;
+}
+.banner__offer {
+		line-height: 1.17;
+		font-weight: 400;
+		text-transform: capitalize;
+}
+.banner__label {
+		font-size: 11px;
+		background-color: #9174ce;
+		color: #fff;
+		line-height: 1.27;
+		font-weight: 400;
+		padding: 1px 5px 1px 6px;
+		text-transform: capitalize;
+}

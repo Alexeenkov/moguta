@@ -508,3 +508,135 @@ $color-purple: #9174ce;
     }
   }
 }
+
+.banner {
+  margin-bottom: 40px;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__main {}
+  &__slider {
+    margin-bottom: 18px;
+  }
+  &__slide {
+    & img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__pagination {}
+  &__prev {
+    display: none;
+  }
+  &__next {
+    display: none;
+  }
+  &__side {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 38px;
+  }
+  &__side-img {
+    width: 48%;
+    & img {
+      max-width: 100%;
+      width: 100%;
+    }
+    & a {
+      position: relative;
+      display: flex;
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        bottom: 50%;
+        top: 50%;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        opacity: 0.1;
+        transition: all 0.3s ease-out;
+      }
+      &:hover::after {
+        transition: all 0.9s ease-in-out;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+      }
+    }
+  }
+  &__aside {}
+  &__aside-item {
+    position: relative;
+    width: 100%;
+    & img {
+      max-width: 100%;
+      width: 100%;
+    }
+    &:nth-child(n+2) {
+      margin-top: 20px;
+    }
+    & a {
+      position: relative;
+      display: flex;
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 0.45s ease 0s;
+        background-color: rgba($color: #fff, $alpha: 0.7);
+      }
+      &::before {
+        left: 0;
+        right: 100%;
+      }
+      &::after {
+        right: 0;
+        left: 100%;
+      }
+      &:hover::after {
+        left: 50%;
+        opacity: 0.7;
+      }
+      &:hover::before {
+        right: 50%;
+        opacity: 0.7;
+      }
+    }
+  }
+  &__content {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 30px;
+    padding-top: 51px;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #010101;
+    line-height: 1.29;
+  }
+  &__offer {
+    line-height: 1.17;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  &__label {
+    font-size: 11px;
+    background-color: $color-purple;
+    color: #fff;
+    line-height: 1.27;
+    font-weight: 400;
+    padding: 1px 5px 1px 6px;
+    text-transform: capitalize;
+  }
+}

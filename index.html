@@ -6,254 +6,337 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--! Подключение файлов CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v4.7.0/css/font-awesome-css.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Your Store</title>
 </head>
 
 <body>
-  <nav class="top">
-    <div class="top__wrapper">
-      <div class="top__contacts">
-        <p>Good Luck With Shopping. Call Us Free 24/7 : (555) 172-244-7888 | (555) 172-244</p>
-      </div>
-      <ul class="top__links">
-        <li class="top__wishlist top__item">
-          <a href="#0"><i class="fa fa-heart"></i>
+  <div class="wrapper">
+
+    <nav class="top">
+      <div class="top__wrapper">
+        <div class="top__contacts">
+          <p>Good Luck With Shopping. Call Us Free 24/7 : (555) 172-244-7888 | (555) 172-244</p>
+        </div>
+        <ul class="top__links">
+          <li class="top__wishlist top__item">
+            <a href="#0"><i class="fa fa-heart"></i>
             <span>Wish List (0)</span>
           </a>
-        </li>
-        <li class="top__checkout top__item">
-          <a href="#0">
-            <i class="fa fa-share"></i>
-            <span>Checkout</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <header class="header">
-    <div class="wrapper header__wrapper">
-      <div class="header__main">
-        <div class="header__logo">
-          <a href="index.html">
-            <img src="img/logo.png" title="Your Store" alt="Your Store">
-          </a>
-        </div>
-        <div class="header__container">
-          <div class="header__cabinet-container">
-            <div class="header__burger">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-              <span class="visually-hidden">Menu</span>
-            </div>
-            <ul class="header__cabinet">
-              <li class="header__account account">
-                <div class="account__image"></div>
-                <span class="account__title">My Account</span>
-                <ul class="account__menu">
-                  <li class="account__register">
-                    <a href="#0" class="account__link">Register</a>
-                  </li>
-                  <li class="account__login">
-                    <a href="#0" class="account__link">Login</a>
-                  </li>
-                  <li class="account__language account_border">
-                    <form action="#" method="POST">
-                      <a href="#0" class="account__link">Language</a>
-                      <ul class="account__buttons">
-                        <li class="account__button account__eng">
-                          <button type="button" class="account__eng-button" name="en-gb">
-                            <img src="img/en-gb.png" alt="English" title="English">
-                            <span class="visually-hidden">English</span>
-                          </button>
-                        </li>
-                        <li class="account__button account__ar">
-                          <button type="button" class="account__ar-button" name="ar">
-                            <img src="img/ar.png" alt="Arabic" title="Arabic">
-                            <span class="visually-hidden">Arabic</span>
-                          </button>
-                        </li>
-                      </ul>
-                    </form>
-                  </li>
-                  <li class="account__currency account_border">
-                    <form action="#" method="POST">
-                      <a href="#0" class="account__link">Currency</a>
-                      <ul class="account__buttons">
-                        <li class="account__button account__eur">
-                          <button type="button" class="account__eur-button">
-                            € <span class="visually-hidden">Euro</span>
-                          </button>
-                        </li>
-                        <li class="account__button account__pound">
-                          <button type="button" class="account__pound-button">
-                            £ <span class="visually-hidden">Pound Sterling</span>
-                          </button>
-                        </li>
-                        <li class="account__button account__dollar">
-                          <button type="button" class="account__dollar-button">
-                            $ <span class="visually-hidden">US Dollar</span>
-                          </button>
-                        </li>
-                      </ul>
-                    </form>
-                  </li>
-                </ul>
-              </li>
-              <li class="header__cart cart">
-                <div class="cart__image"></div>
-                <span class="cart__title">
-                  <span class="cart__count">0</span> My cart
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div class="header__search">
-            <input type="text" name="search" placeholder="Search">
-            <button type="button" class="header__button-search">
-            <span class="visually-hidden">Search</span>
-          </button>
-          </div>
-        </div>
-      </div>
-      <nav class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#0">Home</a>
           </li>
-          <li class="menu__item">
-            <a href="#0">Clothes</a>
-            <span class="menu__arrow"></span>
-            <div class="menu__dropdown">
-              <ul class="menu__subcategory">
-                <li>
-                  <a href="#0" class="menu_font-size">Kids</a>
-                  <span class="menu__arrow"></span>
-                  <ul class="menu__dropdown menu__dropdown_padding">
-                    <li class="menu__link">
-                      <a href="#0">Capri</a>
-                    </li>
-                    <li class="menu__link">
-                      <a href="#0">Jacket</a>
-                    </li>
-                    <li class="menu__link">
-                      <a href="#0">Shorts</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <ul class="menu__subcategory">
-                <li>
-                  <a href="#0" class="menu_font-size">Women</a>
-                  <span class="menu__arrow"></span>
-                  <ul class="menu__dropdown menu__dropdown_padding">
-                    <li class="menu__link">
-                      <a href="#0">Dresses</a>
-                    </li>
-                    <li class="menu__link">
-                      <a href="#0">Frocks</a>
-                    </li>
-                    <li class="menu__link">
-                      <a href="#0">Saree</a>
-                    </li>
-                    <li class="menu__link">
-                      <a href="#0">Suits</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <ul class="menu__subcategory">
-                <li>
-                  <a href="#0" class="menu_font-size">Men</a>
-                  <span class="menu__arrow"></span>
-                  <ul class="menu__dropdown menu__dropdown_padding">
-                    <li class="menu__link">
-                      <a href="#0">Denim</a>
-                    </li>
-                    <li class="menu__link">
-                      <a href="#0">Jeans</a>
-                    </li>
-                    <li class="menu__link">
-                      <a href="#0">Shirts</a>
-                    </li>
-                    <li class="menu__link">
-                      <a href="#0">T-Shirts</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="menu__item">
-            <a href="#0">Accessories</a>
-            <span class="menu__arrow"></span>
-            <div class="menu__dropdown">
-              <ul class="menu__subcategory">
-                <li class="menu__link">
-                  <a href="#0">Cap</a>
-                </li>
-                <li class="menu__link">
-                  <a href="#0">Handbags</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="menu__item">
-            <a href="#0">Art</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0">Kitchen Accessories</a>
-            <span class="menu__arrow"></span>
-            <div class="menu__dropdown">
-              <ul class="menu__subcategory">
-                <li>
-                  <a href="#0">Blender</a>
-                  <span class="menu__arrow"></span>
-                  <div class="menu__dropdown">
-                    <ul class="menu__subcategory">
-                      <li class="menu__link">
-                        <a href="#0">Grater</a>
-                      </li>
-                      <li class="menu__link">
-                        <a href="#0">Whisk</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu__link">
-                  <a href="#0">Colander</a>
-                </li>
-                <li class="menu__link">
-                  <a href="#0">Cutting Board</a>
-                </li>
-                <li class="menu__link">
-                  <a href="#0">Mixing Bowls</a>
-                </li>
-                <li class="menu__link">
-                  <a href="#0">Rolling Pin</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="menu__item">
-            <a href="#0">Smart watch</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0">Electronics</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0">Home accessories</a>
-          </li>
-          <li class="menu__item">
-            <a href="#0">Blogs</a>
+          <li class="top__checkout top__item">
+            <a href="#0">
+              <i class="fa fa-share"></i>
+              <span>Checkout</span>
+            </a>
           </li>
         </ul>
-      </nav>
-    </div>
-  </header>
+      </div>
+    </nav>
 
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__main">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="img/logo.png" title="Your Store" alt="Your Store">
+            </a>
+          </div>
+          <div class="header__container">
+            <div class="header__cabinet-container">
+              <div class="header__burger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span class="visually-hidden">Menu</span>
+              </div>
+              <ul class="header__cabinet">
+                <li class="header__account account">
+                  <div class="account__image"></div>
+                  <span class="account__title">My Account</span>
+                  <ul class="account__menu">
+                    <li class="account__register">
+                      <a href="#0" class="account__link">Register</a>
+                    </li>
+                    <li class="account__login">
+                      <a href="#0" class="account__link">Login</a>
+                    </li>
+                    <li class="account__language account_border">
+                      <form action="#" method="POST">
+                        <a href="#0" class="account__link">Language</a>
+                        <ul class="account__buttons">
+                          <li class="account__button account__eng">
+                            <button type="button" class="account__eng-button" name="en-gb">
+                              <img src="img/en-gb.png" alt="English" title="English">
+                              <span class="visually-hidden">English</span>
+                            </button>
+                          </li>
+                          <li class="account__button account__ar">
+                            <button type="button" class="account__ar-button" name="ar">
+                              <img src="img/ar.png" alt="Arabic" title="Arabic">
+                              <span class="visually-hidden">Arabic</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </form>
+                    </li>
+                    <li class="account__currency account_border">
+                      <form action="#" method="POST">
+                        <a href="#0" class="account__link">Currency</a>
+                        <ul class="account__buttons">
+                          <li class="account__button account__eur">
+                            <button type="button" class="account__eur-button">
+                              € <span class="visually-hidden">Euro</span>
+                            </button>
+                          </li>
+                          <li class="account__button account__pound">
+                            <button type="button" class="account__pound-button">
+                              £ <span class="visually-hidden">Pound Sterling</span>
+                            </button>
+                          </li>
+                          <li class="account__button account__dollar">
+                            <button type="button" class="account__dollar-button">
+                              $ <span class="visually-hidden">US Dollar</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </form>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__cart cart">
+                  <div class="cart__image"></div>
+                  <span class="cart__title">
+                    <span class="cart__count">0</span> My cart
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="header__search">
+              <input type="text" name="search" placeholder="Search">
+              <button type="button" class="header__button-search">
+                <span class="visually-hidden">Search</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#0">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0">Clothes</a>
+              <span class="menu__arrow"></span>
+              <div class="menu__dropdown">
+                <ul class="menu__subcategory">
+                  <li>
+                    <a href="#0" class="menu_font-size">Kids</a>
+                    <span class="menu__arrow"></span>
+                    <ul class="menu__dropdown menu__dropdown_padding">
+                      <li class="menu__link">
+                        <a href="#0">Capri</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="#0">Jacket</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="#0">Shorts</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="menu__subcategory">
+                  <li>
+                    <a href="#0" class="menu_font-size">Women</a>
+                    <span class="menu__arrow"></span>
+                    <ul class="menu__dropdown menu__dropdown_padding">
+                      <li class="menu__link">
+                        <a href="#0">Dresses</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="#0">Frocks</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="#0">Saree</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="#0">Suits</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="menu__subcategory">
+                  <li>
+                    <a href="#0" class="menu_font-size">Men</a>
+                    <span class="menu__arrow"></span>
+                    <ul class="menu__dropdown menu__dropdown_padding">
+                      <li class="menu__link">
+                        <a href="#0">Denim</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="#0">Jeans</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="#0">Shirts</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="#0">T-Shirts</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a href="#0">Accessories</a>
+              <span class="menu__arrow"></span>
+              <div class="menu__dropdown">
+                <ul class="menu__subcategory">
+                  <li class="menu__link">
+                    <a href="#0">Cap</a>
+                  </li>
+                  <li class="menu__link">
+                    <a href="#0">Handbags</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a href="#0">Art</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0">Kitchen Accessories</a>
+              <span class="menu__arrow"></span>
+              <div class="menu__dropdown">
+                <ul class="menu__subcategory">
+                  <li>
+                    <a href="#0">Blender</a>
+                    <span class="menu__arrow"></span>
+                    <div class="menu__dropdown">
+                      <ul class="menu__subcategory">
+                        <li class="menu__link">
+                          <a href="#0">Grater</a>
+                        </li>
+                        <li class="menu__link">
+                          <a href="#0">Whisk</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__link">
+                    <a href="#0">Colander</a>
+                  </li>
+                  <li class="menu__link">
+                    <a href="#0">Cutting Board</a>
+                  </li>
+                  <li class="menu__link">
+                    <a href="#0">Mixing Bowls</a>
+                  </li>
+                  <li class="menu__link">
+                    <a href="#0">Rolling Pin</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a href="#0">Smart watch</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0">Electronics</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0">Home accessories</a>
+            </li>
+            <li class="menu__item">
+              <a href="#0">Blogs</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="banner__wrapper">
+        <div class="banner__main">
+          <div class="swiper banner__slider">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide banner__slide">
+                <a href="#0">
+                  <img src="img/slider-1.jpg" alt="Mainbanner 1">
+                </a>
+              </div>
+              <div class="swiper-slide banner__slide">
+                <a href="#0">
+                  <img src="img/slider-2.jpg" alt="Mainbanner 2">
+                </a>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination banner__pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev banner__prev"></div>
+            <div class="swiper-button-next banner__next"></div>
+          </div>
+          <ul class="banner__side">
+            <li class="banner__side-img">
+              <a href="#0" title="Banner_CMS1">
+                <img src="img/cat-banner-1.jpg" alt="Banner_CMS1">
+              </a>
+            </li>
+            <li class="banner__side-img">
+              <a href="#0" title="Banner_CMS2">
+                <img src="img/cat-banner-2.jpg" alt="Banner_CMS2">
+              </a>
+            </li>
+        </div>
+
+        <ul class="banner__aside">
+          <li class="banner__aside-item">
+            <a href="#0" title="pbanner">
+              <img src="img/Sub-banner-01.jpg" alt="Sub-banner-1">
+              <div class="banner__content">
+                <div class="banner__title">Extraordinary</div>
+                <span class="banner__offer">
+                  Handbags
+                  <span class="banner__label">Hot</span>
+                </span>
+              </div>
+            </a>
+          </li>
+          <li class="banner__aside-item">
+            <a href="#0" title="pbanner">
+              <img src="img/Sub-banner-02.jpg" alt="Sub-banner-2">
+              <div class="banner__content">
+                <div class="banner__title">Ready lighting?</div>
+                <span class="banner__offer">
+                  <span class="banner__label">Colorful</span> Hor offer!!
+                </span>
+              </div>
+            </a>
+          </li>
+          <div class="banner__aside-item">
+            <a href="#0" title="pbanner">
+              <img src="img/Sub-banner-03.jpg" alt="Sub-banner-3">
+              <div class="banner__content">
+                <div class="banner__title">
+                  Neckless
+                  <span class="banner__label">Limited</span>
+                </div>
+                <span class="banner__offer">Extraordinary</span>
+              </div>
+            </a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
   <script src="js/font-awesome.js"></script>
   <script src="js/dropdown.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
 </body>
 
 </html>
