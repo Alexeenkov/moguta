@@ -23,3 +23,28 @@ new Swiper('.banner__slider', {
     disableOnInteraction: true,
   },
 });
+
+new Swiper('.product__slider', {
+  mode: 'horizontal',
+  navigation: {
+    nextEl: '.product__next',
+    prevEl: '.product__prev'
+  },
+  pagination: {
+    el: '.banner__pagination',
+    clickable: true,
+  },
+  // Количество слайдов для показа
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  // если слайдов меньше чем нужно
+  watchOverflow: true,
+  // Бесконечный слайдер
+  loop: true,
+  // Отсутупы между слайдами
+  spaceBetween: 30,
+  // Обновление при изменении элелментов (для табов)
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+});

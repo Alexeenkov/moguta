@@ -46,7 +46,6 @@ h4,
 h5,
 h6 {
   margin: 0;
-  color: #444;
 }
 
 :focus {
@@ -65,6 +64,7 @@ body {
   font-style: normal;
   line-height: 20px;
   letter-spacing: 1px;
+  overflow-x: hidden;
 }
 
 body.lock,
@@ -639,4 +639,203 @@ $color-purple: #9174ce;
     padding: 1px 5px 1px 6px;
     text-transform: capitalize;
   }
+}
+
+.product {
+  padding-top: 20px;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    padding: 7px 0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__tab {
+    border: 2px solid transparent;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.42857;
+    padding: 6px 17px;
+    text-transform: capitalize;
+    &._active {
+      color: $color-purple;
+    }
+  }
+  &__nav {
+    position: absolute;
+    bottom: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 7px 0 0;
+    cursor: pointer;
+    &:hover::before {
+      color: $color-purple;
+    }
+    &::before {
+      position: relative;
+      top: -10px;
+      font-family: 'FontAwesome';
+      font-size: 28px;
+      text-align: center;
+      color: #c9c9c9;
+    }
+  }
+  &__prev {
+    right: 10px;
+  }
+  &__next {
+    right: -23px;
+  }
+  &__slider {
+    position: absolute;
+    left: -100%;
+    top: 100%;
+    opacity: 0;
+    transition: opacity .8s ease 0.2s;
+    &._active {
+      position: relative;
+      left: 0;
+      opacity: 1;
+    }
+  }
+  &__card {}
+}
+
+.card {
+  transition: all .3s;
+  &:hover &__title {
+    color: $color-purple;
+  }
+  &:hover &__image_hover {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  &:hover &__image_active {
+    transform: translateX(110%);
+    opacity: 0;
+    transition: all .5s linear;
+  }
+  &__image-box {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      background-color: #fff;
+    }
+    &:hover::after {
+      opacity: 0.2;
+    }
+  }
+  &__image {
+    max-width: 100%;
+    &:hover {
+      opacity: 0.8;
+    }
+    &_active {
+      position: relative;
+      transform: translateX(0);
+    }
+    &_hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateX(-110%);
+      transition: all .5s linear;
+    }
+  }
+  &__details {}
+  &__title {
+    font-size: 12px;
+    color: #848484;
+    line-height: 1.67;
+    margin-bottom: 4px;
+    margin-top: 11px;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+  }
+  &__rating {
+    margin-bottom: 10px;
+    color: #999;
+    font-size: 8px;
+  }
+  &__price-box {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  &__price {}
+  &__discount {
+    display: inline-block;
+    background-color: $color-purple;
+    color: #fff;
+    padding: 0 1px;
+    margin: 0 4px;
+  }
+  &__old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  &__button {
+    margin-top: 14px;
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+
+.fa-stack_yellow {
+  color: #E69500;
+}
+
+.fa-star {
+  position: absolute;
+  color: #FC0;
+}
+
+.button {
+  display: inline-block;
+  background-color: $color-purple;
+  color: #fff;
+  padding: 7px 10px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #9174ce;
+  border-radius: 5px;
+  vertical-align: middle;
+  font-size: 12px;
 }
