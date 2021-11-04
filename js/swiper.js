@@ -30,10 +30,6 @@ new Swiper('.product__slider', {
     nextEl: '.product__next',
     prevEl: '.product__prev'
   },
-  pagination: {
-    el: '.banner__pagination',
-    clickable: true,
-  },
   // Количество слайдов для показа
   slidesPerView: 1,
   slidesPerGroup: 1,

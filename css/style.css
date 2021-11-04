@@ -659,6 +659,7 @@ html.lock {
 
 .product {
 		padding-top: 20px;
+		padding-bottom: 25px;
 }
 .product__wrapper {
 		padding: 0 20px;
@@ -881,4 +882,93 @@ html.lock {
 		border-radius: 5px;
 		vertical-align: middle;
 		font-size: 12px;
+}
+
+.sub-banner {
+		padding-top: 20px;
+}
+.sub-banner__wrapper {
+		padding: 0 20px;
+}
+.sub-banner__container {
+		width: 100%;
+		margin-bottom: 32px;
+}
+.sub-banner__banner {
+		width: 100%;
+}
+.sub-banner__banner a {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+}
+.sub-banner__banner img {
+		max-width: 100%;
+}
+.sub-banner__banner:nth-child(n+2) {
+		margin-top: 12px;
+}
+.sub-banner__content {
+		position: absolute;
+		z-index: 1;
+		right: 5.7%;
+		top: 18%;
+		width: 40%;
+}
+.sub-banner__content_position {
+		top: 10.8%;
+		left: 35.5%;
+		right: auto;
+		margin: 0 auto;
+		width: 56%;
+}
+.sub-banner__content_right {
+		right: 0.5%;
+}
+.sub-banner__label {
+		color: #9174ce;
+		line-height: 1.58;
+		text-transform: uppercase;
+		background: #fff;
+		padding: 2px 10px;
+		display: inline-block;
+		letter-spacing: 1.4px;
+		border-radius: 5px;
+}
+.sub-banner__label_padding {
+		padding: 5px 10px;
+}
+.sub-banner__title {
+		font-size: 18px;
+		line-height: 0.89;
+		letter-spacing: 0;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin: 14px 0 6px;
+}
+.sub-banner__title_font-size {
+		font-size: 16px;
+		margin: 13px 0 0;
+}
+.sub-banner__description {
+		color: #757575;
+		display: block;
+		font-size: 13px;
+		font-weight: 400;
+		letter-spacing: 0.6px;
+		line-height: 2.07;
+		text-transform: capitalize;
+}
+.sub-banner__offer {
+		width: 100%;
+}
+.sub-banner__offer a {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+}
+.sub-banner__offer img {
+		max-width: 100%;
 }
