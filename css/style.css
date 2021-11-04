@@ -21,12 +21,20 @@ li {
 		list-style: none;
 }
 
+li {
+		position: relative;
+}
+
 img {
 		vertical-align: top;
 }
 
 button {
 		cursor: pointer;
+		background-color: unset;
+		color: inherit;
+		font-family: inherit;
+		font-size: inherit;
 }
 
 h1,
@@ -45,11 +53,11 @@ h6 {
 
 /* ! ------------------------body-------------------- */
 body {
-		font-family: "Poppins", sans-serif;
+		font-family: "Poppins", "Arial", "Helvetica", sans-serif;
 		color: #000;
-		font-weight: 500;
 		min-width: 320px;
-		font-weight: 400;
+		font-weight: 500;
+		font-size: 12px;
 		font-style: normal;
 		line-height: 20px;
 		letter-spacing: 1px;
@@ -89,6 +97,7 @@ html.lock {
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
 		font-size: 12px;
+		font-weight: 400;
 		letter-spacing: 0.5px;
 }
 .top__links i {
@@ -106,6 +115,7 @@ html.lock {
 }
 
 .header {
+		position: relative;
 		width: 100%;
 }
 .header__wrapper {
@@ -146,6 +156,9 @@ html.lock {
 .header__burger {
 		padding: 7px 20px 24px 0;
 		cursor: pointer;
+}
+.header__burger:hover {
+		color: #9174ce;
 }
 .header__search {
 		display: -webkit-box;
@@ -218,12 +231,23 @@ html.lock {
 }
 
 .account {
+		position: relative;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
+		cursor: pointer;
+}
+.account_border {
+		border-top: 1px dashed #999999;
+		margin-top: 15px;
+		padding-top: 15px;
+		width: 100%;
+}
+.account:hover .account__image {
+		background-image: url("../img/account_active.png");
 }
 .account__image {
 		width: 23px;
@@ -239,7 +263,95 @@ html.lock {
 		display: none;
 }
 .account__menu {
-		display: none;
+		position: absolute;
+		top: 53px;
+		left: -105px;
+		-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.12);
+		        box-shadow: 0 0 7px rgba(0, 0, 0, 0.12);
+		background-color: #fff;
+		z-index: 1000;
+		border-radius: 4px;
+		font-weight: 400;
+		font-size: 13px;
+		min-width: 190px;
+		max-height: 0;
+		overflow: hidden;
+		padding: 0 20px;
+		-webkit-box-sizing: content-box;
+		        box-sizing: content-box;
+		-webkit-transition: all 0.5s linear;
+		transition: all 0.5s linear;
+}
+.account__menu._active {
+		margin: 2px 0 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+}
+.account__link {
+		display: block;
+		padding: 6px 0;
+}
+.account__register {
+		color: #333;
+}
+.account__register a:hover {
+		color: #9174ce;
+}
+.account__login {
+		color: #333;
+}
+.account__login a:hover {
+		color: #9174ce;
+}
+.account__language a {
+		padding-bottom: 13px;
+}
+.account__language a:hover {
+		text-decoration: underline;
+}
+.account__language button {
+		max-width: 16px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		width: 100%;
+}
+.account__language button img {
+		max-width: 100%;
+}
+.account__language ul {
+		padding-bottom: 10px;
+}
+.account__buttons {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin-top: 2px;
+		font-size: 14px;
+}
+.account__buttons button:hover {
+		text-decoration: underline;
+}
+.account__button {
+		background-color: #fff;
+}
+.account__button:nth-child(n+2) {
+		margin-left: 15px;
+}
+.account__currency button {
+		padding: 6px 10px;
+		border: 1px solid #d9d9d9;
+		color: #767676;
+		min-width: 35px;
+}
+.account__currency button:hover {
+		text-decoration: underline;
 }
 .cart {
 		display: -webkit-box;
@@ -248,6 +360,17 @@ html.lock {
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
+		cursor: pointer;
+}
+.cart:hover {
+		color: #9174ce;
+}
+.cart:hover .cart__image {
+		background-image: url("../img/cart_active.png");
+}
+.cart:hover .cart__count {
+		background-color: #000;
+		color: #fff;
 }
 .cart__image {
 		width: 23px;
@@ -293,5 +416,106 @@ html.lock {
 }
 
 .menu {
-		display: none;
+		position: absolute;
+		z-index: 999;
+		border-left: 1px solid #e5e5e5;
+		border-right: 1px solid #e5e5e5;
+		top: 70px;
+		left: 0;
+		right: 0;
+		margin: 20px;
+		-webkit-box-sizing: content-box;
+		        box-sizing: content-box;
+		background-color: #fff;
+		-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+		        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+		-webkit-transition: max-height 0.3s linear, top 0.3s linear;
+		transition: max-height 0.3s linear, top 0.3s linear;
+		max-height: 0;
+		overflow: hidden;
+}
+.menu._active {
+		border-top: 1px solid #e8e8e8;
+		border-bottom: 1px solid #e8e8e8;
+		top: 85px;
+		padding: 9px 0 15px 0;
+}
+.menu_font-size {
+		font-size: 13px;
+		padding: 10px;
+}
+.menu_font-size:hover {
+		color: #9174ce;
+}
+.menu_font-size:hover::after {
+		color: #000;
+}
+.menu__item:hover > a {
+		color: #9174ce;
+}
+.menu__item:hover > a::after {
+		color: #000;
+}
+.menu__item:nth-child(n+2) {
+		margin-top: 3px;
+}
+.menu__item a {
+		display: block;
+}
+.menu__item > a {
+		display: block;
+		padding: 10px;
+}
+.menu__dropdown {
+		-webkit-box-sizing: content-box;
+		        box-sizing: content-box;
+		-webkit-transition: all 0.3s linear;
+		transition: all 0.3s linear;
+		overflow: hidden;
+		max-height: 0;
+		padding: 0 10px;
+}
+.menu__dropdown._active {
+		padding-top: 10px;
+		padding-bottom: 15px;
+}
+.menu__dropdown_padding {
+		padding-bottom: 0;
+		padding-top: 0;
+}
+.menu__link {
+		padding: 4px 0;
+}
+.menu__link a {
+		padding-left: 20px;
+		font-weight: normal;
+}
+.menu__link:hover {
+		color: #9174ce;
+}
+.menu__link:hover .menu__link__arrow::after {
+		color: #000;
+}
+.menu__arrow {
+		position: absolute;
+		z-index: 1;
+		background-image: url("../svg/arrow.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 12px;
+		height: 35px;
+		width: 45px;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+}
+.menu__arrow._active {
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+}
+.menu__arrow:hover {
+		color: #9174ce;
+}
+.menu__arrow:hover::after {
+		color: #000;
 }

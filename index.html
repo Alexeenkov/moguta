@@ -36,7 +36,7 @@
     <div class="wrapper header__wrapper">
       <div class="header__main">
         <div class="header__logo">
-          <a href="index.htlm">
+          <a href="index.html">
             <img src="img/logo.png" title="Your Store" alt="Your Store">
           </a>
         </div>
@@ -52,49 +52,51 @@
                 <span class="account__title">My Account</span>
                 <ul class="account__menu">
                   <li class="account__register">
-                    <a href="#0">Register</a>
+                    <a href="#0" class="account__link">Register</a>
                   </li>
                   <li class="account__login">
-                    <a href="#0">Login</a>
+                    <a href="#0" class="account__link">Login</a>
                   </li>
-                  <li class="account__language">
+                  <li class="account__language account_border">
                     <form action="#" method="POST">
-                      <a href="#0">Language</a>
+                      <a href="#0" class="account__link">Language</a>
                       <ul class="account__buttons">
-                        <li class="account__eng">
+                        <li class="account__button account__eng">
                           <button type="button" class="account__eng-button" name="en-gb">
-                          <img src="img/en-gb.png" alt="English" title="English">
-                          <span class="visually-hidden">English</span>
-                        </button>
+                            <img src="img/en-gb.png" alt="English" title="English">
+                            <span class="visually-hidden">English</span>
+                          </button>
                         </li>
-                        <li class="account__ar">
+                        <li class="account__button account__ar">
                           <button type="button" class="account__ar-button" name="ar">
-                          <img src="img/ar.png" alt="Arabic" title="Arabic">
-                          <span class="visually-hidden">Arabic</span>
-                        </button>
+                            <img src="img/ar.png" alt="Arabic" title="Arabic">
+                            <span class="visually-hidden">Arabic</span>
+                          </button>
                         </li>
                       </ul>
                     </form>
                   </li>
-                  <li class="account__currency">
-                    <a href="#0">Currency</a>
-                    <ul class="account__buttons">
-                      <li class="account__eur">
-                        <button class="account__eur-button">
-                        € <span class="visually-hidden">Euro</span>
-                      </button>
-                      </li>
-                      <li class="account__pound">
-                        <button class="account__pound-button">
-                        £ <span class="visually-hidden">Pound Sterling</span>
-                      </button>
-                      </li>
-                      <li class="account__dollar">
-                        <button class="account__dollar-button">
-                        $ <span class="visually-hidden">US Dollar</span>
-                      </button>
-                      </li>
-                    </ul>
+                  <li class="account__currency account_border">
+                    <form action="#" method="POST">
+                      <a href="#0" class="account__link">Currency</a>
+                      <ul class="account__buttons">
+                        <li class="account__button account__eur">
+                          <button type="button" class="account__eur-button">
+                            € <span class="visually-hidden">Euro</span>
+                          </button>
+                        </li>
+                        <li class="account__button account__pound">
+                          <button type="button" class="account__pound-button">
+                            £ <span class="visually-hidden">Pound Sterling</span>
+                          </button>
+                        </li>
+                        <li class="account__button account__dollar">
+                          <button type="button" class="account__dollar-button">
+                            $ <span class="visually-hidden">US Dollar</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </form>
                   </li>
                 </ul>
               </li>
@@ -121,11 +123,13 @@
           </li>
           <li class="menu__item">
             <a href="#0">Clothes</a>
+            <span class="menu__arrow"></span>
             <div class="menu__dropdown">
               <ul class="menu__subcategory">
                 <li>
-                  <a href="#0">Kids</a>
-                  <ul class="menu__dropdown">
+                  <a href="#0" class="menu_font-size">Kids</a>
+                  <span class="menu__arrow"></span>
+                  <ul class="menu__dropdown menu__dropdown_padding">
                     <li class="menu__link">
                       <a href="#0">Capri</a>
                     </li>
@@ -140,8 +144,9 @@
               </ul>
               <ul class="menu__subcategory">
                 <li>
-                  <a href="#0">Women</a>
-                  <ul class="menu__dropdown">
+                  <a href="#0" class="menu_font-size">Women</a>
+                  <span class="menu__arrow"></span>
+                  <ul class="menu__dropdown menu__dropdown_padding">
                     <li class="menu__link">
                       <a href="#0">Dresses</a>
                     </li>
@@ -159,8 +164,9 @@
               </ul>
               <ul class="menu__subcategory">
                 <li>
-                  <a href="#0">Men</a>
-                  <ul class="menu__dropdown">
+                  <a href="#0" class="menu_font-size">Men</a>
+                  <span class="menu__arrow"></span>
+                  <ul class="menu__dropdown menu__dropdown_padding">
                     <li class="menu__link">
                       <a href="#0">Denim</a>
                     </li>
@@ -180,6 +186,7 @@
           </li>
           <li class="menu__item">
             <a href="#0">Accessories</a>
+            <span class="menu__arrow"></span>
             <div class="menu__dropdown">
               <ul class="menu__subcategory">
                 <li class="menu__link">
@@ -195,11 +202,23 @@
             <a href="#0">Art</a>
           </li>
           <li class="menu__item">
-            <a href="#0">Kitchen accessories</a>
+            <a href="#0">Kitchen Accessories</a>
+            <span class="menu__arrow"></span>
             <div class="menu__dropdown">
               <ul class="menu__subcategory">
-                <li class="menu__link">
+                <li>
                   <a href="#0">Blender</a>
+                  <span class="menu__arrow"></span>
+                  <div class="menu__dropdown">
+                    <ul class="menu__subcategory">
+                      <li class="menu__link">
+                        <a href="#0">Grater</a>
+                      </li>
+                      <li class="menu__link">
+                        <a href="#0">Whisk</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="menu__link">
                   <a href="#0">Colander</a>
@@ -220,17 +239,10 @@
             <a href="#0">Smart watch</a>
           </li>
           <li class="menu__item">
-            <a href="#0">Kitchen accessories</a>
-            <div class="menu__dropdown">
-              <ul class="menu__subcategory">
-                <li class="menu__link">
-                  <a href="#0">Electronics</a>
-                </li>
-                <li class="menu__link">
-                  <a href="#0">Home accessories</a>
-                </li>
-              </ul>
-            </div>
+            <a href="#0">Electronics</a>
+          </li>
+          <li class="menu__item">
+            <a href="#0">Home accessories</a>
           </li>
           <li class="menu__item">
             <a href="#0">Blogs</a>
@@ -240,8 +252,8 @@
     </div>
   </header>
 
-
   <script src="js/font-awesome.js"></script>
+  <script src="js/dropdown.js"></script>
 </body>
 
 </html>

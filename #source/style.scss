@@ -23,12 +23,20 @@ li {
   list-style: none;
 }
 
+li {
+  position: relative;
+}
+
 img {
   vertical-align: top;
 }
 
 button {
   cursor: pointer;
+  background-color: unset;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 h1,
@@ -49,15 +57,14 @@ h6 {
 /* ! ------------------------body-------------------- */
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Arial', 'Helvetica', sans-serif;
   color: #000;
-  font-weight: 500;
   min-width: 320px;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 12px;
   font-style: normal;
   line-height: 20px;
   letter-spacing: 1px;
-  // background: url("../img/bg.jpg") fixed;
 }
 
 body.lock,
@@ -97,6 +104,7 @@ $color-purple: #9174ce;
     display: flex;
     justify-content: flex-end;
     font-size: 12px;
+    font-weight: 400;
     letter-spacing: 0.5px;
     & i {
       padding: 5px;
@@ -118,6 +126,7 @@ $color-purple: #9174ce;
 }
 
 .header {
+  position: relative;
   width: 100%;
   &__wrapper {
     width: 100%;
@@ -147,6 +156,9 @@ $color-purple: #9174ce;
   &__burger {
     padding: 7px 20px 24px 0;
     cursor: pointer;
+    &:hover {
+      color: $color-purple;
+    }
   }
   &__search {
     display: flex;
@@ -214,8 +226,19 @@ $color-purple: #9174ce;
 }
 
 .account {
+  position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  &_border {
+    border-top: 1px dashed #999999;
+    margin-top: 15px;
+    padding-top: 15px;
+    width: 100%;
+  }
+  &:hover &__image {
+    background-image: url('../img/account_active.png');
+  }
   &__image {
     width: 23px;
     height: 23px;
@@ -230,17 +253,99 @@ $color-purple: #9174ce;
     display: none;
   }
   &__menu {
-    display: none;
+    position: absolute;
+    top: 53px;
+    left: -105px;
+    box-shadow: 0 0 7px rgb(0 0 0 / 12%);
+    background-color: #fff;
+    z-index: 1000;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 13px;
+    min-width: 190px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    box-sizing: content-box;
+    transition: all .5s linear;
+    &._active {
+      margin: 2px 0 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
-  &__register {}
-  &__login {}
-  &__language {}
-  &__buttons {}
+  &__link {
+    display: block;
+    padding: 6px 0;
+  }
+  &__register {
+    color: #333;
+    & a {
+      &:hover {
+        color: $color-purple;
+      }
+    }
+  }
+  &__login {
+    color: #333;
+    & a {
+      &:hover {
+        color: $color-purple;
+      }
+    }
+  }
+  &__language {
+    & a {
+      padding-bottom: 13px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    & button {
+      max-width: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      & img {
+        max-width: 100%;
+      }
+    }
+    & ul {
+      padding-bottom: 10px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    margin-top: 2px;
+    font-size: 14px;
+    & button {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__button {
+    background-color: #fff;
+    &:nth-child(n+2) {
+      margin-left: 15px;
+    }
+  }
   &__eng {}
   &__eng-button {}
   &__ar {}
   &__ar-button {}
-  &__currency {}
+  &__currency {
+    & button {
+      padding: 6px 10px;
+      border: 1px solid #d9d9d9;
+      color: #767676;
+      min-width: 35px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
   &__eur {}
   &__eur-button {}
   &__pound {}
@@ -252,6 +357,17 @@ $color-purple: #9174ce;
 .cart {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  &:hover {
+    color: $color-purple;
+  }
+  &:hover &__image {
+    background-image: url('../img/cart_active.png');
+  }
+  &:hover &__count {
+    background-color: #000;
+    color: #fff;
+  }
   &__image {
     width: 23px;
     height: 23px;
@@ -272,7 +388,7 @@ $color-purple: #9174ce;
     top: -11px;
     padding: 1px 4px 1px 4px;
     border-radius: 50%;
-    background-color: #9174ce;
+    background-color: $color-purple;
     font-size: 11px;
     font-weight: 600;
     color: #fff;
@@ -291,10 +407,104 @@ $color-purple: #9174ce;
 }
 
 .menu {
-  display: none;
+  position: absolute;
+  z-index: 999;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: 20px;
+  box-sizing: content-box;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+  transition: max-height .3s linear, top .3s linear;
+  max-height: 0;
+  overflow: hidden;
+  &._active {
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    top: 85px;
+    padding: 9px 0 15px 0;
+  }
+  &_font-size {
+    font-size: 13px;
+    padding: 10px;
+    &:hover {
+      color: $color-purple;
+    }
+    &:hover::after {
+      color: #000;
+    }
+  }
   &__list {}
-  &__item {}
-  &__dropdown {}
+  &__item {
+    &:hover>a {
+      color: $color-purple;
+    }
+    &:hover>a::after {
+      color: #000;
+    }
+    &:nth-child(n+2) {
+      margin-top: 3px;
+    }
+    & a {
+      display: block;
+    }
+    &>a {
+      display: block;
+      padding: 10px;
+    }
+  }
+  &__dropdown {
+    box-sizing: content-box;
+    transition: all .3s linear;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 10px;
+    &._active {
+      padding-top: 10px;
+      padding-bottom: 15px;
+    }
+    &_padding {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
   &__subcategory {}
-  &__link {}
+  &__link {
+    padding: 4px 0;
+    & a {
+      padding-left: 20px;
+      font-weight: normal;
+    }
+    &:hover {
+      color: $color-purple;
+    }
+    &:hover &__arrow::after {
+      color: #000;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    z-index: 1;
+    background-image: url('../svg/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+    height: 35px;
+    width: 45px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    &._active {
+      transform: rotate(180deg);
+    }
+    &:hover {
+      color: $color-purple;
+    }
+    &:hover::after {
+      color: #000;
+    }
+  }
 }
