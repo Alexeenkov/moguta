@@ -89,6 +89,10 @@ $color-purple: #9174ce;
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+._hide {
+  display: none;
+}
+
 .top {
   color: $color-grey;
   border-bottom: 1px solid #e8e8e8;
@@ -978,5 +982,226 @@ $color-purple: #9174ce;
   }
   &__next {
     right: 8px;
+  }
+}
+
+.blog {
+  padding-top: 30px;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  &__slider {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  &__slider-wrapper {}
+  &__slide {
+    border: 1px solid #e8e8e8;
+    padding: 15px;
+    &:hover .blog__subtitle {
+      color: $color-purple;
+    }
+  }
+  &__image-box {
+    position: relative;
+    margin-bottom: 15px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      background-color: #000;
+      opacity: 0;
+      transition: all .5s ease-out;
+    }
+    &:hover::after {
+      opacity: 0.6;
+    }
+    &:hover & {
+      opacity: 0.6;
+    }
+    &:hover .blog__buttons {
+      opacity: 1;
+    }
+  }
+  &__image {
+    max-width: 100%;
+  }
+  &__buttons {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .5s ease;
+  }
+  &__button {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 14px 12px;
+    background-color: $color-purple;
+    color: #fff;
+    min-width: 44px;
+    transition: all .5s ease;
+    &:hover {
+      background: #000;
+    }
+  }
+  &__zoom {
+    margin-right: 10px;
+  }
+  &__link {}
+  &__content {}
+  &__date {
+    color: $color-purple;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    line-height: 1.77;
+  }
+  &__subtitle {
+    transition: all .5s ease;
+    color: #131414;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.83;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+  }
+}
+
+.popup {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  padding: 40px 10px;
+  width: 100vw;
+  min-width: 320px;
+  height: 100vh;
+  background-color: rgba(00, 00, 00, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all .6s ease 0s;
+  color: #fff;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.open .popup__content {
+    transform: scale(1);
+    opacity: 1;
+  }
+  &__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content {
+    position: relative;
+    background-color: #fff;
+    transition: all .6s ease 0s;
+    opacity: 0;
+    padding: 4px;
+    border-radius: 4px;
+    max-width: 100%;
+    transform: scale(0);
+  }
+  &__close {
+    position: absolute;
+    right: 4px;
+    bottom: -32px;
+    width: 25px;
+    height: 25px;
+    background-color: unset;
+    background-image: url("../svg/form-x.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__img {
+    width: 100%;
+    border-radius: 4px;
+    & img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+  }
+  &__nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    &:hover img {
+      opacity: 1;
+    }
+    & img {
+      width: 33px;
+      position: absolute;
+      top: 50%;
+      opacity: 0;
+    }
+  }
+  &__prev {
+    left: 0;
+    right: 50%;
+    & img {
+      left: 20px;
+      transform: rotate(180deg) translateY(50%);
+    }
+  }
+  &__next {
+    right: 0;
+    left: 50%;
+    & img {
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+  &__details {
+    position: absolute;
+    bottom: -43px;
+    left: 0;
+    color: #fff;
+  }
+  &__description {
+    font-size: 13px;
+    font-weight: bold;
+    color: #bbbbbb;
+  }
+  &__counter {
+    position: relative;
+    font-size: 12px;
+    color: #999999;
+    top: -7px;
   }
 }

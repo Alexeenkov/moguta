@@ -4,14 +4,17 @@ const arrows = document.querySelectorAll('.menu__arrow');
 const account = document.querySelector('.account__menu');
 const accountBtn = document.querySelector('.account');
 
+// Слушаем нажатие на бургер
 burger.addEventListener('click', () => {
   showDropdownMenu(menu);
 });
 
+// Слушаем нажатие на аккаунт
 accountBtn.addEventListener('click', () => {
   showDropdownMenu(account);
 });
 
+// слушаем нажатие на любую стрелочку меню
 for (let arrow of arrows) {
   arrow.addEventListener('click', (e) => {
     // При нажатии на стрелку находим соседнее с ней выпадающее меню:

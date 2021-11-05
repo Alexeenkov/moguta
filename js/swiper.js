@@ -57,10 +57,6 @@ new Swiper('.special__slider', {
   loop: true,
   // Отсутупы между слайдами
   spaceBetween: 30,
-  // Обновление при изменении элелментов (для табов)
-  observer: true,
-  observeParents: true,
-  observeSlideChildren: true,
 });
 
 new Swiper('.shop__slider', {
@@ -77,7 +73,25 @@ new Swiper('.shop__slider', {
   loop: true,
   // Отсутупы между слайдами
   spaceBetween: 30,
-  // Обновление при изменении элелментов (для табов)
+});
+
+const blogSlider = new Swiper('.blog__slider', {
+  // Количество слайдов для показа
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  speed: 600,
+  // если слайдов меньше чем нужно
+  watchOverflow: true,
+  // Бесконечный слайдер
+  loop: false,
+  // Отсутупы между слайдами
+  spaceBetween: 20,
+  // Автопрокрутка
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  // Обновление при изменении элементов
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
