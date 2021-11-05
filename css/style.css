@@ -972,3 +972,16 @@ html.lock {
 .sub-banner__offer img {
 		max-width: 100%;
 }
+
+.special {
+		padding-top: 35px;
+}
+.special__nav {
+		bottom: -5px;
+}
+.special__prev {
+		right: 10px;
+}
+.special__next {
+		right: -23px;
+}

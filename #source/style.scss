@@ -925,3 +925,17 @@ $color-purple: #9174ce;
     }
   }
 }
+
+.special {
+  padding-top: 35px;
+  &__nav {
+    bottom: -5px;
+  }
+  &__prev {
+    right: 10px;
+  }
+  &__next {
+    right: -23px;
+  }
+  &__slider {}
+}
