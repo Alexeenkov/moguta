@@ -985,3 +985,50 @@ html.lock {
 .special__next {
 		right: -23px;
 }
+.shop {
+		margin-bottom: 15px;
+}
+.shop:hover .shop__nav {
+		opacity: 1;
+}
+.shop__wrapper {
+		padding: 0 20px;
+}
+.shop__slider {
+		background-color: #f7f7f7;
+		padding: 50px 30px 50px;
+}
+.shop__slide {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+}
+.shop__image-box {
+		opacity: 0.3;
+}
+.shop__image-box:hover {
+		opacity: 0.7;
+}
+.shop__image {
+		max-width: 100%;
+}
+.shop__nav {
+		z-index: 2;
+		-webkit-transform: translateY(50%);
+		        transform: translateY(50%);
+		bottom: 50%;
+		opacity: 0;
+}
+.shop__prev {
+		right: auto;
+		left: 15px;
+}
+.shop__next {
+		right: 8px;
+}
