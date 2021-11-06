@@ -1,8 +1,9 @@
 const burger = document.querySelector('.header__burger');
 const menu = document.querySelector('.menu');
-const arrows = document.querySelectorAll('.menu__arrow');
+const arrowsHeader = document.querySelectorAll('.menu__arrow_toggle');
 const account = document.querySelector('.account__menu');
 const accountBtn = document.querySelector('.account');
+const footerSpoilerBtn = document.querySelectorAll('.spoiler-toggle');
 
 // Слушаем нажатие на бургер
 burger.addEventListener('click', () => {
@@ -15,10 +16,20 @@ accountBtn.addEventListener('click', () => {
 });
 
 // слушаем нажатие на любую стрелочку меню
-for (let arrow of arrows) {
+for (let arrow of arrowsHeader) {
   arrow.addEventListener('click', (e) => {
     // При нажатии на стрелку находим соседнее с ней выпадающее меню:
     let dropMenu = e.target.closest('li').querySelector('.menu__dropdown');
+    e.target.classList.toggle('_active');
+    showDropdownMenu(dropMenu);
+  });
+}
+
+// слушаем нажатие на любую стрелочку в футере, либо заголовок
+for (let btn of footerSpoilerBtn) {
+  btn.addEventListener('click', (e) => {
+    // При нажатии на стрелку или заголовок находим соседнее выпадающее меню:
+    let dropMenu = e.target.closest('.footer__spoiler').querySelector('.footer__list');
     e.target.classList.toggle('_active');
     showDropdownMenu(dropMenu);
   });
@@ -35,7 +46,7 @@ function showDropdownMenu(elem) {
     elem.classList.add('_active');
     // Пересчитываем высоту выпадающего меню:
     elem.style.maxHeight = elem.scrollHeight + 'px';
-    if (elem !== menu && elem !== account) {
+    if (elem !== menu && elem !== account && elem !== account) {
       // Выпадающее меню-родитель:
       let parentMenu = elem.closest('.menu__item').querySelector('.menu__dropdown');
       // При нажатии на стрелки пересчитываем высоту главного меню:

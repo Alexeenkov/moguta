@@ -127,12 +127,12 @@
             </li>
             <li class="menu__item">
               <a href="#0">Clothes</a>
-              <span class="menu__arrow"></span>
+              <span class="menu__arrow menu__arrow_toggle"></span>
               <div class="menu__dropdown">
                 <ul class="menu__subcategory">
                   <li>
                     <a href="#0" class="menu_font-size">Kids</a>
-                    <span class="menu__arrow"></span>
+                    <span class="menu__arrow menu__arrow_toggle"></span>
                     <ul class="menu__dropdown menu__dropdown_padding">
                       <li class="menu__link">
                         <a href="#0">Capri</a>
@@ -149,7 +149,7 @@
                 <ul class="menu__subcategory">
                   <li>
                     <a href="#0" class="menu_font-size">Women</a>
-                    <span class="menu__arrow"></span>
+                    <span class="menu__arrow menu__arrow_toggle"></span>
                     <ul class="menu__dropdown menu__dropdown_padding">
                       <li class="menu__link">
                         <a href="#0">Dresses</a>
@@ -169,7 +169,7 @@
                 <ul class="menu__subcategory">
                   <li>
                     <a href="#0" class="menu_font-size">Men</a>
-                    <span class="menu__arrow"></span>
+                    <span class="menu__arrow menu__arrow_toggle"></span>
                     <ul class="menu__dropdown menu__dropdown_padding">
                       <li class="menu__link">
                         <a href="#0">Denim</a>
@@ -190,7 +190,7 @@
             </li>
             <li class="menu__item">
               <a href="#0">Accessories</a>
-              <span class="menu__arrow"></span>
+              <span class="menu__arrow menu__arrow_toggle"></span>
               <div class="menu__dropdown">
                 <ul class="menu__subcategory">
                   <li class="menu__link">
@@ -207,12 +207,12 @@
             </li>
             <li class="menu__item">
               <a href="#0">Kitchen Accessories</a>
-              <span class="menu__arrow"></span>
+              <span class="menu__arrow menu__arrow_toggle"></span>
               <div class="menu__dropdown">
                 <ul class="menu__subcategory">
                   <li>
-                    <a href="#0">Blender</a>
-                    <span class="menu__arrow"></span>
+                    <a href="#0" class="menu__link_position">Blender</a>
+                    <span class="menu__arrow menu__arrow_toggle menu__arrow_position"></span>
                     <div class="menu__dropdown">
                       <ul class="menu__subcategory">
                         <li class="menu__link">
@@ -1536,108 +1536,145 @@
 
   <div class="footer">
     <div class="footer__wrapper">
-      <address class="footer__container">
-        <h5 class="footer__title">Store information</h5>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <div class="footer__image">
-              <img src="img/contact-1_purple.png" alt="address" title="address">
-            </div>
-            <span>705-Infinity Centre, Beside trafy building, united state</span>
-          </li>
-          <li class="footer__item">
-            <div class="footer__image">
-              <img src="img/contact-2_purple.png" alt="telephon number" title="telephon number">
-            </div>
-            <span>Call us: 0123-456-789</span>
-          </li>
-          <li class="footer__item">
-            <div class="footer__image">
-              <img src="img/contact-3_purple.png" alt="e-mail" title="e-mail">
-            </div>
-            <span>support@yourstore.com</span>
-          </li>
-        </ul>
-      </address>
       <div class="footer__container">
-        <h5 class="footer__title">Information</h5>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#0" class="footer__link">About Us</a>
-          </li>
-          <li class="footer__item">
-            <a href="#0" class="footer__link">Delivery Information</a>
-          </li>
-          <li class="footer__item">
-            <a href="#0" class="footer__link">Privacy Policy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#0" class="footer__link">Terms & Conditions</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__container">
-        <h5 class="footer__title">My Account</h5>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#0" class="footer__link">My Account</a>
-          </li>
-          <li class="footer__item">
-            <a href="#0" class="footer__link">Specials</a>
-          </li>
-          <li class="footer__item">
-            <a href="#0" class="footer__link">Contact Us</a>
-          </li>
-          <li class="footer__item">
-            <a href="#0" class="footer__link">Site Map</a>
-          </li>
-          <li class="footer__item">
-            <a href="#0" class="footer__link">Brands</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__last-container">
-        <div class="footer__container">
-          <h5 class="footer__title">Sign Up for Newsletter</h5>
-          <form action="#" method="POST" class="footer__form">
-            <input type="email" name="email" id="email" placeholder="E-Mail" class="footer__email">
-            <button type="button" class="footer__button">
-          Subscribe
-          <span class="visually-hidden">Подписаться на рассылку</span>
-        </button>
-          </form>
-        </div>
-        <div class="footer__container">
-          <h5 class="footer__title">Social media</h5>
+        <address class="footer__spoiler">
+          <h5 class="footer__title spoiler-toggle">Store information</h5>
+          <span class="menu__arrow footer__arrow spoiler-toggle"></span>
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="#0" class="footer__social">
-                <span class="visually-hidden">Facebook</span>
-              </a>
+              <div class="footer__image">
+                <img src="img/contact-1_purple.png" alt="address" title="address">
+              </div>
+              <span>705-Infinity Centre, Beside trafy building, united state</span>
             </li>
             <li class="footer__item">
-              <a href="#0" class="footer__social">
-                <span class="visually-hidden">Google</span>
-              </a>
+              <div class="footer__image">
+                <img src="img/contact-2_purple.png" alt="telephon number" title="telephon number">
+              </div>
+              <span>Call us: <a href="tel:0123456789">0123-456-789</a></span>
             </li>
             <li class="footer__item">
-              <a href="#0" class="footer__social">
-                <span class="visually-hidden">Twitter</span>
-              </a>
+              <div class="footer__image">
+                <img src="img/contact-3_purple.png" alt="e-mail" title="e-mail">
+              </div>
+              <a href="mailto:support@yourstore.com">support@yourstore.com</a>
+            </li>
+          </ul>
+        </address>
+        <div class="footer__spoiler">
+          <h5 class="footer__title spoiler-toggle">Information</h5>
+          <span class="menu__arrow footer__arrow spoiler-toggle"></span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#0" class="footer__link">About Us</a>
             </li>
             <li class="footer__item">
-              <a href="#0" class="footer__social">
-                <span class="visually-hidden">Pinterest</span>
-              </a>
+              <a href="#0" class="footer__link">Delivery Information</a>
             </li>
             <li class="footer__item">
-              <a href="#0" class="footer__social">
-                <span class="visually-hidden">Instagram</span>
-              </a>
+              <a href="#0" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a href="#0" class="footer__link">Terms & Conditions</a>
             </li>
           </ul>
         </div>
+        <div class="footer__spoiler">
+          <h5 class="footer__title spoiler-toggle">My Account</h5>
+          <span class="menu__arrow footer__arrow spoiler-toggle"></span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#0" class="footer__link">My Account</a>
+            </li>
+            <li class="footer__item">
+              <a href="#0" class="footer__link">Specials</a>
+            </li>
+            <li class="footer__item">
+              <a href="#0" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#0" class="footer__link">Site Map</a>
+            </li>
+            <li class="footer__item">
+              <a href="#0" class="footer__link">Brands</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__last-container">
+          <div class="footer__spoiler">
+            <h5 class="footer__title spoiler-toggle">Sign Up for Newsletter</h5>
+            <span class="menu__arrow footer__arrow spoiler-toggle"></span>
+            <form action="#" method="POST" class="footer__list footer__form">
+              <input type="email" name="email" id="email" placeholder="E-Mail" class="footer__email">
+              <button type="button" class="footer__button">
+          Subscribe
+          <span class="visually-hidden">Подписаться на рассылку</span>
+        </button>
+            </form>
+          </div>
+          <div class="footer__spoiler">
+            <h5 class="footer__title spoiler-toggle">Social media</h5>
+            <span class="menu__arrow footer__arrow spoiler-toggle"></span>
+            <ul class="footer__list footer__socials">
+              <li class="footer__item">
+                <a href="#0" class="footer__social">
+                  <i class="fa fa-facebook"></i>
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#0" class="footer__social">
+                  <i class="fa fa-google"></i>
+                  <span class="visually-hidden">Google</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#0" class="footer__social">
+                  <i class="fa fa-twitter"></i>
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#0" class="footer__social">
+                  <i class="fa fa-pinterest"></i>
+                  <span class="visually-hidden">Pinterest</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#0" class="footer__social">
+                  <i class="fa fa-instagram"></i>
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <div class="footer__copyright">
+        <span>Powered By <a href="#0">OpenCart</a> Your Store © 2021</span>
+      </div>
+      <ul class="footer__payments">
+        <li class="footer__pay">
+          <img src="img/pay-1.png" alt="discover" title="discover">
+          <span class="visually-hidden">discover</span>
+        </li>
+        <li class="footer__pay">
+          <img src="img/pay-2.png" alt="google" title="google">
+          <span class="visually-hidden">google</span>
+        </li>
+        <li class="footer__pay">
+          <img src="img/pay-3.png" alt="maestro" title="maestro">
+          <span class="visually-hidden">maestro</span>
+        </li>
+        <li class="footer__pay">
+          <img src="img/pay-4.png" alt="mastercard" title="mastercard">
+          <span class="visually-hidden">mastercard</span>
+        </li>
+        <li class="footer__pay">
+          <img src="img/pay-5.png" alt="paypal" title="paypal">
+          <span class="visually-hidden">paypal</span>
+        </li>
+      </ul>
     </div>
   </div>
 
