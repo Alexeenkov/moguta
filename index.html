@@ -37,7 +37,7 @@
     </nav>
 
     <header class="header">
-      <div class="header__wrapper">
+      <div class="header__wrapper block-wrapper">
         <div class="header__main">
           <div class="header__logo">
             <a href="index.html">
@@ -128,10 +128,10 @@
             <li class="menu__item">
               <a href="#0">Clothes</a>
               <span class="menu__arrow menu__arrow_toggle"></span>
-              <div class="menu__dropdown">
-                <ul class="menu__subcategory">
+              <div class="menu__dropdown clothes">
+                <ul class="menu__subcategory clothes__subcategory">
                   <li>
-                    <a href="#0" class="menu_font-size">Kids</a>
+                    <a href="#0" class="menu_font-size clothes__title">Kids</a>
                     <span class="menu__arrow menu__arrow_toggle"></span>
                     <ul class="menu__dropdown menu__dropdown_padding">
                       <li class="menu__link">
@@ -146,9 +146,9 @@
                     </ul>
                   </li>
                 </ul>
-                <ul class="menu__subcategory">
+                <ul class="menu__subcategory clothes__subcategory">
                   <li>
-                    <a href="#0" class="menu_font-size">Women</a>
+                    <a href="#0" class="menu_font-size clothes__title">Women</a>
                     <span class="menu__arrow menu__arrow_toggle"></span>
                     <ul class="menu__dropdown menu__dropdown_padding">
                       <li class="menu__link">
@@ -166,9 +166,9 @@
                     </ul>
                   </li>
                 </ul>
-                <ul class="menu__subcategory">
+                <ul class="menu__subcategory clothes__subcategory">
                   <li>
-                    <a href="#0" class="menu_font-size">Men</a>
+                    <a href="#0" class="menu_font-size clothes__title">Men</a>
                     <span class="menu__arrow menu__arrow_toggle"></span>
                     <ul class="menu__dropdown menu__dropdown_padding">
                       <li class="menu__link">
@@ -210,10 +210,10 @@
               <span class="menu__arrow menu__arrow_toggle"></span>
               <div class="menu__dropdown">
                 <ul class="menu__subcategory">
-                  <li>
+                  <li class="menu__dropdown_hover">
                     <a href="#0" class="menu__link_position">Blender</a>
                     <span class="menu__arrow menu__arrow_toggle menu__arrow_position"></span>
-                    <div class="menu__dropdown">
+                    <div class="menu__dropdown blender">
                       <ul class="menu__subcategory">
                         <li class="menu__link">
                           <a href="#0">Grater</a>
@@ -257,26 +257,26 @@
     </header>
 
     <div class="banner">
-      <div class="banner__wrapper">
+      <div class="banner__wrapper block-wrapper">
         <div class="banner__main">
           <div class="swiper banner__slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide banner__slide">
                 <a href="#0">
-                  <img src="img/slider-1.jpg" alt="Mainbanner 1">
+                  <img src="img/slider-2.jpg" alt="Mainbanner 1">
                 </a>
               </div>
               <div class="swiper-slide banner__slide">
                 <a href="#0">
-                  <img src="img/slider-2.jpg" alt="Mainbanner 2">
+                  <img src="img/slider-1.jpg" alt="Mainbanner 2">
                 </a>
               </div>
             </div>
             <!-- ? pagination -->
             <div class="swiper-pagination banner__pagination"></div>
             <!-- ? navigation buttons -->
-            <div class="swiper-button-prev banner__prev"></div>
-            <div class="swiper-button-next banner__next"></div>
+            <div class="swiper-button-prev banner__nav banner__prev"></div>
+            <div class="swiper-button-next banner__nav banner__next"></div>
           </div>
           <ul class="banner__side">
             <li class="banner__side-img">
@@ -330,1214 +330,1322 @@
         </ul>
       </div>
     </div>
-  </div>
 
-  <main class="product">
-    <div class="product__wrapper">
-      <div class="product__container">
-        <h2 class="product__title">Our products</h2>
-        <div class="product__tabs">
-          <a href="#0" class="product__tab product__tab _active">Latest</a>
-          <a href="#0" class="product__tab">Bestseller</a>
-          <a href="#0" class="product__tab">Special</a>
-        </div>
-        <!-- ? navigation buttons -->
-        <a class="fa prev fa-arrow-left product__nav product__prev"></a>
-        <a class="fa next fa-arrow-right product__nav product__next"></a>
-      </div>
-
-      <div id="latest" class="swiper product__slider _active">
-        <div class="swiper-wrapper">
-          <!-- ! Slide 1 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-1.jpg" class="card__image card__image_active" alt="Foramationdi Venkash" title="Foramationdi Venkash">
-              <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Foramationdi Venkash" title="Foramationdi Venkash">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Foramationdi Venkash</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$122.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price">$241.99</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 2 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-2.jpg" class="card__image card__image_active" alt="Varius Neque At Enim" title="Varius Neque At Enim">
-              <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Varius Neque At Enim" title="Varius Neque At Enim">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Varius Neque At Enim</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 3 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-3.jpg" class="card__image card__image_active" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
-              <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Suspendisse Massa Nulla</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$62.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price">122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 4 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-2.jpg" class="card__image card__image_active" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
-              <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Bhumitationa Centyraon</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$842.00</span>
-                <span class="card__discount">30%</span>
-                <span class="card__old-price">1,202.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 5 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-4.jpg" class="card__image card__image_active" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
-              <img src="img/product-4_hover.jpg" class="card__image card__image_hover" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Mauris Blandit Vehicula</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$1,000.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price">2,000.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 6 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-5.jpg" class="card__image card__image_active" alt="Aminatiom Descentation" title="Aminatiom Descentation">
-              <img src="img/product-5_hover.jpg" class="card__image card__image_hover" alt="Aminatiom Descentation" title="Aminatiom Descentation">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Aminatiom Descentation</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$1,082.00</span>
-                <span class="card__discount">10%</span>
-                <span class="card__old-price">1,202.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 7 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-6.jpg" class="card__image card__image_active" alt="Tarundecf Beseking" title="Tarundecf Beseking">
-              <img src="img/product-6_hover.jpg" class="card__image card__image_hover" alt="Tarundecf Beseking" title="Tarundecf Beseking">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Tarundecf Beseking</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$482.00</span>
-                <span class="card__discount">20%</span>
-                <span class="card__old-price">602.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 8 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-4_hover.jpg" class="card__image card__image_active" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
-              <img src="img/product-7_hover.jpg" class="card__image card__image_hover" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Curabitur Dolor Nunc</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$110.00</span>
-                <span class="card__discount">10%</span>
-                <span class="card__old-price">122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 9 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-8.jpg" class="card__image card__image_active" alt="Suspendisse Potenti" title="Suspendisse Potenti">
-              <img src="img/product-5_hover.jpg" class="card__image card__image_hover" alt="Suspendisse Potenti" title="Suspendisse Potenti">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Suspendisse Potenti</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 10 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-9.jpg" class="card__image card__image_active" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
-              <img src="img/product-2.jpg" class="card__image card__image_hover" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Tellus Eu Volutpat Varius</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$122.00</span>
-                <span class="card__discount">1%</span>
-                <span class="card__old-price">123.20</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div id="bestseller" class="swiper product__slider">
-        <div class="swiper-wrapper">
-          <!-- ! Slide 1 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-2.jpg" class="card__image card__image_active" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
-              <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Bhumitationa Centyraon</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$842.00</span>
-                <span class="card__discount">30%</span>
-                <span class="card__old-price">1,202.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 2 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-2.jpg" class="card__image card__image_active" alt="Varius Neque At Enim" title="Varius Neque At Enim">
-              <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Varius Neque At Enim" title="Varius Neque At Enim">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Varius Neque At Enim</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 4 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-7_hover.jpg" class="card__image card__image_active" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
-              <img src="img/product-8.jpg" class="card__image card__image_hover" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Cum Sociis Natoque</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$98.00</span>
-                <span class="card__discount">20%</span>
-                <span class="card__old-price">$122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 5 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-6.jpg" class="card__image card__image_active" alt="Tarundecf Beseking" title="Tarundecf Beseking">
-              <img src="img/product-6_hover.jpg" class="card__image card__image_hover" alt="Tarundecf Beseking" title="Tarundecf Beseking">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Tarundecf Beseking</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$482.00</span>
-                <span class="card__discount">20%</span>
-                <span class="card__old-price">602.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 6 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-4.jpg" class="card__image card__image_active" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
-              <img src="img/product-4_hover.jpg" class="card__image card__image_hover" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Mauris Blandit Vehicula</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$1,000.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price">2,000.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 7 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-1_hover.jpg" class="card__image card__image_active" alt="Justo Neque Commodo Nisl" title="Justo Neque Commodo Nisl">
-              <img src="img/product-8.jpg" class="card__image card__image_hover" alt="Justo Neque Commodo Nisl" title="Justo Neque Commodo Nisl">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Justo Neque Commodo Nisl</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div id="special" class="swiper product__slider">
-        <div class="swiper-wrapper">
-          <!-- ! Slide 1 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-5.jpg" class="card__image card__image_active" alt="Aminatiom Descentation" title="Aminatiom Descentation">
-              <img src="img/product-5_hover.jpg" class="card__image card__image_hover" alt="Aminatiom Descentation" title="Aminatiom Descentation">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Aminatiom Descentation</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$1,082.00</span>
-                <span class="card__discount">10%</span>
-                <span class="card__old-price">1,202.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 2 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-2.jpg" class="card__image card__image_active" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
-              <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Bhumitationa Centyraon</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$842.00</span>
-                <span class="card__discount">30%</span>
-                <span class="card__old-price">1,202.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 3 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-7_hover.jpg" class="card__image card__image_active" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
-              <img src="img/product-8.jpg" class="card__image card__image_hover" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Cum Sociis Natoque</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$98.00</span>
-                <span class="card__discount">20%</span>
-                <span class="card__old-price">$122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 4 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-4_hover.jpg" class="card__image card__image_active" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
-              <img src="img/product-7_hover.jpg" class="card__image card__image_hover" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Curabitur Dolor Nunc</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$110.00</span>
-                <span class="card__discount">10%</span>
-                <span class="card__old-price">122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 5 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-1.jpg" class="card__image card__image_active" alt="Foramationdi Venkash" title="Foramationdi Venkash">
-              <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Foramationdi Venkash" title="Foramationdi Venkash">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Foramationdi Venkash</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$122.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price">$241.99</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 6 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-4.jpg" class="card__image card__image_active" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
-              <img src="img/product-4_hover.jpg" class="card__image card__image_hover" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Mauris Blandit Vehicula</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$1,000.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price">2,000.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 7 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-3.jpg" class="card__image card__image_active" alt="Meghpolo Nepturis" title="Meghpolo Nepturis">
-              <img src="img/product-9.jpg" class="card__image card__image_hover" alt="Meghpolo Nepturis" title="Meghpolo Nepturis">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Meghpolo Nepturis</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$242.00</span>
-                <span class="card__discount">29%</span>
-                <span class="card__old-price">337.99</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 8 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-3.jpg" class="card__image card__image_active" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
-              <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Suspendisse Massa Nulla</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$62.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price">122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 9 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-6.jpg" class="card__image card__image_active" alt="Tarundecf Beseking" title="Tarundecf Beseking">
-              <img src="img/product-6_hover.jpg" class="card__image card__image_hover" alt="Tarundecf Beseking" title="Tarundecf Beseking">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Tarundecf Beseking</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$482.00</span>
-                <span class="card__discount">20%</span>
-                <span class="card__old-price">602.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 10 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-9.jpg" class="card__image card__image_active" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
-              <img src="img/product-2.jpg" class="card__image card__image_hover" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Tellus Eu Volutpat Varius</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$122.00</span>
-                <span class="card__discount">1%</span>
-                <span class="card__old-price">123.20</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <aside class="sub-banner">
-    <div class="sub-banner__wrapper">
-      <div class="sub-banner__container">
-        <article class="sub-banner__banner">
-          <a href="#0" title="Fashion lab">
-            <img src="img/sub-banner-1.jpg" alt="Fashion lab" title="Fashion lab">
-            <div class="sub-banner__content">
-              <div class="sub-banner__label">40% off</div>
-              <h3 class="sub-banner__title">Fashion lab</h3>
-              <span class="sub-banner__description">Explore our range</span>
-            </div>
-          </a>
-        </article>
-        <article class="sub-banner__banner">
-          <a href="#0" title="Elect dron">
-            <img src="img/sub-banner-2.jpg" alt="Elect dron" title="Elect dron">
-            <div class="sub-banner__content sub-banner__content_right">
-              <div class="sub-banner__label">50% off</div>
-              <h3 class="sub-banner__title">Elect dron</h3>
-              <span class="sub-banner__description">Stylish designs</span>
-            </div>
-          </a>
-        </article>
-      </div>
-      <article class="sub-banner__offer">
-        <a href="#0" title="Elect dron">
-          <img src="img/sub-banner-3.jpg" alt="Summer special off" title="Summer special off">
-          <div class="sub-banner__content sub-banner__content_position">
-            <div class="sub-banner__label sub-banner__label_padding">Limited edition</div>
-            <h3 class="sub-banner__title sub-banner__title_font-size">Summer special off</h3>
+    <main class="product">
+      <div class="product__wrapper block-wrapper">
+        <div class="product__container">
+          <h2 class="product__title">Our products</h2>
+          <div class="product__tabs">
+            <a href="#0" class="product__tab product__tab _active">Latest</a>
+            <a href="#0" class="product__tab">Bestseller</a>
+            <a href="#0" class="product__tab">Special</a>
           </div>
-        </a>
-      </article>
-    </div>
-  </aside>
+          <!-- ? navigation buttons -->
+          <a class="fa prev fa-arrow-left product__nav product__prev"></a>
+          <a class="fa next fa-arrow-right product__nav product__next"></a>
+        </div>
 
-  <aside class="product special">
-    <div class="product__wrapper">
-      <div class="product__container">
-        <h2 class="product__title">Specials</h2>
-        <!-- ? navigation buttons -->
-        <a class="fa prev fa-arrow-left product__nav special__nav special__prev"></a>
-        <a class="fa next fa-arrow-right product__nav special__nav special__next"></a>
+        <div id="latest" class="swiper product__slider _active">
+          <div class="swiper-wrapper">
+            <!-- ! Slide 1 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-1.jpg" class="card__image card__image_active" alt="Foramationdi Venkash" title="Foramationdi Venkash">
+                <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Foramationdi Venkash" title="Foramationdi Venkash">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Foramationdi Venkash</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$122.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price">$241.99</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 2 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-2.jpg" class="card__image card__image_active" alt="Varius Neque At Enim" title="Varius Neque At Enim">
+                <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Varius Neque At Enim" title="Varius Neque At Enim">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Varius Neque At Enim</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 3 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-3.jpg" class="card__image card__image_active" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
+                <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Suspendisse Massa Nulla</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$62.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price">122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 4 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-2.jpg" class="card__image card__image_active" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
+                <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Bhumitationa Centyraon</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$842.00</span>
+                  <span class="card__discount">30%</span>
+                  <span class="card__old-price">1,202.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 5 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-4.jpg" class="card__image card__image_active" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
+                <img src="img/product-4_hover.jpg" class="card__image card__image_hover" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Mauris Blandit Vehicula</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$1,000.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price">2,000.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 6 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-5.jpg" class="card__image card__image_active" alt="Aminatiom Descentation" title="Aminatiom Descentation">
+                <img src="img/product-5_hover.jpg" class="card__image card__image_hover" alt="Aminatiom Descentation" title="Aminatiom Descentation">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Aminatiom Descentation</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$1,082.00</span>
+                  <span class="card__discount">10%</span>
+                  <span class="card__old-price">1,202.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 7 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-6.jpg" class="card__image card__image_active" alt="Tarundecf Beseking" title="Tarundecf Beseking">
+                <img src="img/product-6_hover.jpg" class="card__image card__image_hover" alt="Tarundecf Beseking" title="Tarundecf Beseking">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Tarundecf Beseking</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$482.00</span>
+                  <span class="card__discount">20%</span>
+                  <span class="card__old-price">602.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 8 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-4_hover.jpg" class="card__image card__image_active" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
+                <img src="img/product-7_hover.jpg" class="card__image card__image_hover" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Curabitur Dolor Nunc</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$110.00</span>
+                  <span class="card__discount">10%</span>
+                  <span class="card__old-price">122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 9 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-8.jpg" class="card__image card__image_active" alt="Suspendisse Potenti" title="Suspendisse Potenti">
+                <img src="img/product-5_hover.jpg" class="card__image card__image_hover" alt="Suspendisse Potenti" title="Suspendisse Potenti">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Suspendisse Potenti</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 10 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-9.jpg" class="card__image card__image_active" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
+                <img src="img/product-2.jpg" class="card__image card__image_hover" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Tellus Eu Volutpat Varius</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$122.00</span>
+                  <span class="card__discount">1%</span>
+                  <span class="card__old-price">123.20</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="bestseller" class="swiper product__slider">
+          <div class="swiper-wrapper">
+            <!-- ! Slide 1 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-2.jpg" class="card__image card__image_active" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
+                <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Bhumitationa Centyraon</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$842.00</span>
+                  <span class="card__discount">30%</span>
+                  <span class="card__old-price">1,202.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 2 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-2.jpg" class="card__image card__image_active" alt="Varius Neque At Enim" title="Varius Neque At Enim">
+                <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Varius Neque At Enim" title="Varius Neque At Enim">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Varius Neque At Enim</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 4 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-7_hover.jpg" class="card__image card__image_active" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
+                <img src="img/product-8.jpg" class="card__image card__image_hover" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Cum Sociis Natoque</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$98.00</span>
+                  <span class="card__discount">20%</span>
+                  <span class="card__old-price">$122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 5 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-6.jpg" class="card__image card__image_active" alt="Tarundecf Beseking" title="Tarundecf Beseking">
+                <img src="img/product-6_hover.jpg" class="card__image card__image_hover" alt="Tarundecf Beseking" title="Tarundecf Beseking">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Tarundecf Beseking</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$482.00</span>
+                  <span class="card__discount">20%</span>
+                  <span class="card__old-price">602.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 6 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-4.jpg" class="card__image card__image_active" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
+                <img src="img/product-4_hover.jpg" class="card__image card__image_hover" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Mauris Blandit Vehicula</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$1,000.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price">2,000.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 7 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-1_hover.jpg" class="card__image card__image_active" alt="Justo Neque Commodo Nisl" title="Justo Neque Commodo Nisl">
+                <img src="img/product-8.jpg" class="card__image card__image_hover" alt="Justo Neque Commodo Nisl" title="Justo Neque Commodo Nisl">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Justo Neque Commodo Nisl</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div id="special" class="swiper product__slider">
+          <div class="swiper-wrapper">
+            <!-- ! Slide 1 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-5.jpg" class="card__image card__image_active" alt="Aminatiom Descentation" title="Aminatiom Descentation">
+                <img src="img/product-5_hover.jpg" class="card__image card__image_hover" alt="Aminatiom Descentation" title="Aminatiom Descentation">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Aminatiom Descentation</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$1,082.00</span>
+                  <span class="card__discount">10%</span>
+                  <span class="card__old-price">1,202.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 2 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-2.jpg" class="card__image card__image_active" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
+                <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Bhumitationa Centyraon</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$842.00</span>
+                  <span class="card__discount">30%</span>
+                  <span class="card__old-price">1,202.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 3 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-7_hover.jpg" class="card__image card__image_active" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
+                <img src="img/product-8.jpg" class="card__image card__image_hover" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Cum Sociis Natoque</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$98.00</span>
+                  <span class="card__discount">20%</span>
+                  <span class="card__old-price">$122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 4 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-4_hover.jpg" class="card__image card__image_active" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
+                <img src="img/product-7_hover.jpg" class="card__image card__image_hover" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Curabitur Dolor Nunc</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$110.00</span>
+                  <span class="card__discount">10%</span>
+                  <span class="card__old-price">122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 5 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-1.jpg" class="card__image card__image_active" alt="Foramationdi Venkash" title="Foramationdi Venkash">
+                <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Foramationdi Venkash" title="Foramationdi Venkash">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Foramationdi Venkash</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$122.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price">$241.99</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 6 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-4.jpg" class="card__image card__image_active" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
+                <img src="img/product-4_hover.jpg" class="card__image card__image_hover" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Mauris Blandit Vehicula</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$1,000.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price">2,000.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 7 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-3.jpg" class="card__image card__image_active" alt="Meghpolo Nepturis" title="Meghpolo Nepturis">
+                <img src="img/product-9.jpg" class="card__image card__image_hover" alt="Meghpolo Nepturis" title="Meghpolo Nepturis">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Meghpolo Nepturis</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$242.00</span>
+                  <span class="card__discount">29%</span>
+                  <span class="card__old-price">337.99</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 8 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-3.jpg" class="card__image card__image_active" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
+                <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Suspendisse Massa Nulla</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$62.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price">122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 9 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-6.jpg" class="card__image card__image_active" alt="Tarundecf Beseking" title="Tarundecf Beseking">
+                <img src="img/product-6_hover.jpg" class="card__image card__image_hover" alt="Tarundecf Beseking" title="Tarundecf Beseking">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Tarundecf Beseking</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$482.00</span>
+                  <span class="card__discount">20%</span>
+                  <span class="card__old-price">602.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+            <!-- ! Slide 10 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-9.jpg" class="card__image card__image_active" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
+                <img src="img/product-2.jpg" class="card__image card__image_hover" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Tellus Eu Volutpat Varius</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$122.00</span>
+                  <span class="card__discount">1%</span>
+                  <span class="card__old-price">123.20</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
+    </main>
 
-      <div id="special" class="swiper special__slider">
-        <div class="swiper-wrapper">
-          <!-- ! Slide 1 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-5.jpg" class="card__image card__image_active" alt="Aminatiom Descentation" title="Aminatiom Descentation">
-              <img src="img/product-5_hover.jpg" class="card__image card__image_hover" alt="Aminatiom Descentation" title="Aminatiom Descentation">
+    <aside class="sub-banner">
+      <div class="sub-banner__wrapper block-wrapper">
+        <div class="sub-banner__container">
+          <article class="sub-banner__banner">
+            <a href="#0" title="Fashion lab">
+              <img src="img/sub-banner-1.jpg" alt="Fashion lab" title="Fashion lab">
+              <div class="sub-banner__content">
+                <div class="sub-banner__label">40% off</div>
+                <h3 class="sub-banner__title">Fashion lab</h3>
+                <span class="sub-banner__description">Explore our range</span>
+              </div>
             </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Aminatiom Descentation</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          </article>
+          <article class="sub-banner__banner">
+            <a href="#0" title="Elect dron">
+              <img src="img/sub-banner-2.jpg" alt="Elect dron" title="Elect dron">
+              <div class="sub-banner__content sub-banner__content_right">
+                <div class="sub-banner__label">50% off</div>
+                <h3 class="sub-banner__title">Elect dron</h3>
+                <span class="sub-banner__description">Stylish designs</span>
               </div>
-              <div class="card__price-box">
-                <span class="card__price">$1,082.00</span>
-                <span class="card__discount">10%</span>
-                <span class="card__old-price">1,202.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 2 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-2.jpg" class="card__image card__image_active" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
-              <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
             </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Bhumitationa Centyraon</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$842.00</span>
-                <span class="card__discount">30%</span>
-                <span class="card__old-price">1,202.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
+          </article>
+        </div>
+        <article class="sub-banner__offer">
+          <a href="#0" title="Elect dron">
+            <img src="img/sub-banner-3.jpg" alt="Summer special off" title="Summer special off">
+            <div class="sub-banner__content sub-banner__content_position">
+              <div class="sub-banner__label sub-banner__label_padding">Limited edition</div>
+              <h3 class="sub-banner__title sub-banner__title_font-size">Summer special off</h3>
+              <span class="sub-banner__description sub-banner__description_font">Lorem Ipsum is simply dummy text of the printing and tyeseting industry.</span>
             </div>
-          </section>
-          <!-- ! Slide 3 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-7_hover.jpg" class="card__image card__image_active" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
-              <img src="img/product-8.jpg" class="card__image card__image_hover" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Cum Sociis Natoque</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          </a>
+        </article>
+      </div>
+    </aside>
+
+    <aside class="product special">
+      <div class="product__wrapper block-wrapper">
+        <div class="product__container">
+          <h2 class="product__title">Specials</h2>
+          <!-- ? navigation buttons -->
+          <a class="fa prev fa-arrow-left product__nav special__nav special__prev"></a>
+          <a class="fa next fa-arrow-right product__nav special__nav special__next"></a>
+        </div>
+
+        <div id="special" class="swiper special__slider">
+          <div class="swiper-wrapper">
+            <!-- ! Slide 1 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-5.jpg" class="card__image card__image_active" alt="Aminatiom Descentation" title="Aminatiom Descentation">
+                <img src="img/product-5_hover.jpg" class="card__image card__image_hover" alt="Aminatiom Descentation" title="Aminatiom Descentation">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Aminatiom Descentation</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$1,082.00</span>
+                  <span class="card__discount">10%</span>
+                  <span class="card__old-price">1,202.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
               </div>
-              <div class="card__price-box">
-                <span class="card__price">$98.00</span>
-                <span class="card__discount">20%</span>
-                <span class="card__old-price">$122.00</span>
+            </section>
+            <!-- ! Slide 2 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-2.jpg" class="card__image card__image_active" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
+                <img src="img/product-2_hover.jpg" class="card__image card__image_hover" alt="Bhumitationa Centyraon" title="Bhumitationa Centyraon">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Bhumitationa Centyraon</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack fa-stack_yellow"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$842.00</span>
+                  <span class="card__discount">30%</span>
+                  <span class="card__old-price">1,202.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
               </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 4 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-4_hover.jpg" class="card__image card__image_active" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
-              <img src="img/product-7_hover.jpg" class="card__image card__image_hover" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Curabitur Dolor Nunc</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+            </section>
+            <!-- ! Slide 3 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-7_hover.jpg" class="card__image card__image_active" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
+                <img src="img/product-8.jpg" class="card__image card__image_hover" alt="Cum Sociis Natoque" title="Cum Sociis Natoque">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Cum Sociis Natoque</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$98.00</span>
+                  <span class="card__discount">20%</span>
+                  <span class="card__old-price">$122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
               </div>
-              <div class="card__price-box">
-                <span class="card__price">$110.00</span>
-                <span class="card__discount">10%</span>
-                <span class="card__old-price">122.00</span>
+            </section>
+            <!-- ! Slide 4 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-4_hover.jpg" class="card__image card__image_active" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
+                <img src="img/product-7_hover.jpg" class="card__image card__image_hover" alt="Curabitur Dolor Nunc" title="Curabitur Dolor Nunc">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Curabitur Dolor Nunc</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$110.00</span>
+                  <span class="card__discount">10%</span>
+                  <span class="card__old-price">122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
               </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 5 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-1.jpg" class="card__image card__image_active" alt="Foramationdi Venkash" title="Foramationdi Venkash">
-              <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Foramationdi Venkash" title="Foramationdi Venkash">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Foramationdi Venkash</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+            </section>
+            <!-- ! Slide 5 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-1.jpg" class="card__image card__image_active" alt="Foramationdi Venkash" title="Foramationdi Venkash">
+                <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Foramationdi Venkash" title="Foramationdi Venkash">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Foramationdi Venkash</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$122.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price">$241.99</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
               </div>
-              <div class="card__price-box">
-                <span class="card__price">$122.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price">$241.99</span>
+            </section>
+            <!-- ! Slide 6 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-4.jpg" class="card__image card__image_active" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
+                <img src="img/product-4_hover.jpg" class="card__image card__image_hover" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Mauris Blandit Vehicula</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$1,000.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price">2,000.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
               </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 6 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-4.jpg" class="card__image card__image_active" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
-              <img src="img/product-4_hover.jpg" class="card__image card__image_hover" alt="Mauris Blandit Vehicula" title="Mauris Blandit Vehicula">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Mauris Blandit Vehicula</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+            </section>
+            <!-- ! Slide 7 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-3.jpg" class="card__image card__image_active" alt="Meghpolo Nepturis" title="Meghpolo Nepturis">
+                <img src="img/product-9.jpg" class="card__image card__image_hover" alt="Meghpolo Nepturis" title="Meghpolo Nepturis">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Meghpolo Nepturis</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$242.00</span>
+                  <span class="card__discount">29%</span>
+                  <span class="card__old-price">337.99</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
               </div>
-              <div class="card__price-box">
-                <span class="card__price">$1,000.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price">2,000.00</span>
+            </section>
+            <!-- ! Slide 8 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-3.jpg" class="card__image card__image_active" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
+                <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Suspendisse Massa Nulla</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$62.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price">122.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
               </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 7 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-3.jpg" class="card__image card__image_active" alt="Meghpolo Nepturis" title="Meghpolo Nepturis">
-              <img src="img/product-9.jpg" class="card__image card__image_hover" alt="Meghpolo Nepturis" title="Meghpolo Nepturis">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Meghpolo Nepturis</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+            </section>
+            <!-- ! Slide 9 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-6.jpg" class="card__image card__image_active" alt="Tarundecf Beseking" title="Tarundecf Beseking">
+                <img src="img/product-6_hover.jpg" class="card__image card__image_hover" alt="Tarundecf Beseking" title="Tarundecf Beseking">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Tarundecf Beseking</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$482.00</span>
+                  <span class="card__discount">20%</span>
+                  <span class="card__old-price">602.00</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
               </div>
-              <div class="card__price-box">
-                <span class="card__price">$242.00</span>
-                <span class="card__discount">29%</span>
-                <span class="card__old-price">337.99</span>
+            </section>
+            <!-- ! Slide 10 -->
+            <section class="swiper-slide product__card card">
+              <a href="#0" class="card__image-box">
+                <img src="img/product-9.jpg" class="card__image card__image_active" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
+                <img src="img/product-2.jpg" class="card__image card__image_hover" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
+                <a href="#0" class="quickview" title="Quick view">
+                  <img src="img/quickview.png" alt="Quick view" title="Quick view">
+                </a>
+              </a>
+              <div class="card__details">
+                <h3 class="card__title">
+                  <a href="#0">Tellus Eu Volutpat Varius</a>
+                </h3>
+                <div class="card__rating">
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                </div>
+                <div class="card__price-box">
+                  <span class="card__price">$122.00</span>
+                  <span class="card__discount">1%</span>
+                  <span class="card__old-price">123.20</span>
+                </div>
+                <button type="button" class="button card__button">Add to cart</button>
               </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 8 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-3.jpg" class="card__image card__image_active" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
-              <img src="img/product-1_hover.jpg" class="card__image card__image_hover" alt="Suspendisse Massa Nulla" title="Suspendisse Massa Nulla">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Suspendisse Massa Nulla</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$62.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price">122.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 9 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-6.jpg" class="card__image card__image_active" alt="Tarundecf Beseking" title="Tarundecf Beseking">
-              <img src="img/product-6_hover.jpg" class="card__image card__image_hover" alt="Tarundecf Beseking" title="Tarundecf Beseking">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Tarundecf Beseking</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$482.00</span>
-                <span class="card__discount">20%</span>
-                <span class="card__old-price">602.00</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
-          <!-- ! Slide 10 -->
-          <section class="swiper-slide product__card card">
-            <a href="#0" class="card__image-box">
-              <img src="img/product-9.jpg" class="card__image card__image_active" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
-              <img src="img/product-2.jpg" class="card__image card__image_hover" alt="Tellus Eu Volutpat Varius" title="Tellus Eu Volutpat Varius">
-            </a>
-            <div class="card__details">
-              <h3 class="card__title">
-                <a href="#0">Tellus Eu Volutpat Varius</a>
-              </h3>
-              <div class="card__rating">
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-              </div>
-              <div class="card__price-box">
-                <span class="card__price">$122.00</span>
-                <span class="card__discount">1%</span>
-                <span class="card__old-price">123.20</span>
-              </div>
-              <button type="button" class="button card__button">Add to cart</button>
-            </div>
-          </section>
+            </section>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="shop">
+      <div class="shop__wrapper block-wrapper">
+        <div class="swiper shop__slider">
+          <div class="swiper-wrapper">
+            <!-- ! Slide 1 -->
+            <section class="swiper-slide shop__slide">
+              <a href="#0" class="shop__image-box">
+                <img src="img/shop-1.png" class="shop__image" alt="" title="">
+              </a>
+            </section>
+            <!-- ! Slide 2 -->
+            <section class="swiper-slide shop__slide">
+              <a href="#0" class="shop__image-box">
+                <img src="img/shop-2.png" class="shop__image" alt="" title="">
+              </a>
+            </section>
+            <!-- ! Slide 3 -->
+            <section class="swiper-slide shop__slide">
+              <a href="#0" class="shop__image-box">
+                <img src="img/shop-3.png" class="shop__image" alt="" title="">
+              </a>
+            </section>
+            <!-- ! Slide 4 -->
+            <section class="swiper-slide shop__slide">
+              <a href="#0" class="shop__image-box">
+                <img src="img/shop-4.png" class="shop__image" alt="" title="">
+              </a>
+            </section>
+          </div>
+          <a class="fa prev fa-arrow-left product__nav shop__nav shop__prev"></a>
+          <a class="fa next fa-arrow-right product__nav shop__nav shop__next"></a>
         </div>
       </div>
     </div>
-  </aside>
 
-  <div class="shop">
-    <div class="shop__wrapper">
-      <div class="swiper shop__slider">
-        <div class="swiper-wrapper">
-          <!-- ! Slide 1 -->
-          <section class="swiper-slide shop__slide">
-            <a href="#0" class="shop__image-box">
-              <img src="img/shop-1.png" class="shop__image" alt="" title="">
-            </a>
-          </section>
-          <!-- ! Slide 2 -->
-          <section class="swiper-slide shop__slide">
-            <a href="#0" class="shop__image-box">
-              <img src="img/shop-2.png" class="shop__image" alt="" title="">
-            </a>
-          </section>
-          <!-- ! Slide 3 -->
-          <section class="swiper-slide shop__slide">
-            <a href="#0" class="shop__image-box">
-              <img src="img/shop-3.png" class="shop__image" alt="" title="">
-            </a>
-          </section>
-          <!-- ! Slide 4 -->
-          <section class="swiper-slide shop__slide">
-            <a href="#0" class="shop__image-box">
-              <img src="img/shop-4.png" class="shop__image" alt="" title="">
-            </a>
-          </section>
-        </div>
-        <a class="fa prev fa-arrow-left product__nav shop__nav shop__prev"></a>
-        <a class="fa next fa-arrow-right product__nav shop__nav shop__next"></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="blog">
-    <div class="blog__wrapper">
-      <h2 class="blog__title">Latest blog</h2>
-      <div class="swiper blog__slider">
-        <div class="swiper-wrapper blog__slider-wrapper">
-          <!-- ! Slide 1 -->
-          <section class="swiper-slide blog__slide">
-            <div href="#0" class="blog__image-box">
-              <img src="img/blog-1.jpg" class="blog__image" alt="Latest Blog" title="Latest Blog">
-              <div class="blog__buttons">
-                <a href="#popup" class="blog__button blog__zoom popup-link" title="Click to view Full Image">
-                  <i class="fa fa-search-plus"></i>
-                </a>
-                <a href="#0" class="blog__button blog__link" title="Click to view Read More ">
-                  <i class="fa fa-link"></i>
-                </a>
+    <div class="blog">
+      <div class="blog__wrapper block-wrapper">
+        <h2 class="blog__title">Latest blog</h2>
+        <div class="swiper blog__slider">
+          <div class="swiper-wrapper blog__slider-wrapper">
+            <!-- ! Slide 1 -->
+            <section class="swiper-slide blog__slide">
+              <div href="#0" class="blog__image-box">
+                <img src="img/blog-1.jpg" class="blog__image" alt="Latest Blog" title="Latest Blog">
+                <div class="blog__buttons">
+                  <a href="#popup" class="blog__button blog__zoom popup-link" title="Click to view Full Image">
+                    <i class="fa fa-search-plus"></i>
+                  </a>
+                  <a href="#0" class="blog__button blog__link" title="Click to view Read More ">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="blog__content">
-              <time datetime="2018-09-18" title="Date of publication" class="blog__date">18, 09, 2018</time>
-              <h4 class="blog__subtitle">
-                <a href="#0" title="Ligula quam Vestibulum consequat convallis">
+              <div class="blog__content">
+                <time datetime="2018-09-18" title="Date of publication" class="blog__date">18, 09, 2018</time>
+                <h4 class="blog__subtitle">
+                  <a href="#0" title="Ligula quam Vestibulum consequat convallis">
                   Ligula quam Vestibulum consequat convallis
                 </a>
-              </h4>
-            </div>
-          </section>
-          <!-- ! Slide 2 -->
-          <section class="swiper-slide blog__slide">
-            <div href="#0" class="blog__image-box">
-              <img src="img/blog-2.jpg" class="blog__image" alt="Latest Blog" title="Latest Blog">
-              <div class="blog__buttons">
-                <a href="#popup" class="blog__button blog__zoom popup-link" title="Click to view Full Image">
-                  <i class="fa fa-search-plus"></i>
-                </a>
-                <a href="#0" class="blog__button blog__link" title="Click to view Read More ">
-                  <i class="fa fa-link"></i>
-                </a>
+                </h4>
               </div>
-            </div>
-            <div class="blog__content">
-              <time datetime="2018-09-18" title="Date of publication" class="blog__date">18, 09, 2018</time>
-              <h4 class="blog__subtitle">
-                <a href="#0" title="Laoreet Vestibulum lacinia massa a commodo habitasse velit">
+            </section>
+            <!-- ! Slide 2 -->
+            <section class="swiper-slide blog__slide">
+              <div href="#0" class="blog__image-box">
+                <img src="img/blog-2.jpg" class="blog__image" alt="Latest Blog" title="Latest Blog">
+                <div class="blog__buttons">
+                  <a href="#popup" class="blog__button blog__zoom popup-link" title="Click to view Full Image">
+                    <i class="fa fa-search-plus"></i>
+                  </a>
+                  <a href="#0" class="blog__button blog__link" title="Click to view Read More ">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="blog__content">
+                <time datetime="2018-09-18" title="Date of publication" class="blog__date">18, 09, 2018</time>
+                <h4 class="blog__subtitle">
+                  <a href="#0" title="Laoreet Vestibulum lacinia massa a commodo habitasse velit">
                   Laoreet Vestibulum lacinia massa a commodo habitasse velit
                 </a>
-              </h4>
-            </div>
-          </section>
-          <!-- ! Slide 3 -->
-          <section class="swiper-slide blog__slide">
-            <div href="#0" class="blog__image-box">
-              <img src="img/blog-3.jpg" class="blog__image" alt="Latest Blog" title="Latest Blog">
-              <div class="blog__buttons">
-                <a href="#popup" class="blog__button blog__zoom popup-link" title="Click to view Full Image">
-                  <i class="fa fa-search-plus"></i>
-                </a>
-                <a href="#0" class="blog__button blog__link" title="Click to view Read More ">
-                  <i class="fa fa-link"></i>
-                </a>
+                </h4>
               </div>
-            </div>
-            <div class="blog__content">
-              <time datetime="2018-09-18" title="Date of publication" class="blog__date">18, 09, 2018</time>
-              <h4 class="blog__subtitle">
-                <a href="#0" title="Nullam ullamcorper nisl quis ornare molestie">
+            </section>
+            <!-- ! Slide 3 -->
+            <section class="swiper-slide blog__slide">
+              <div href="#0" class="blog__image-box">
+                <img src="img/blog-3.jpg" class="blog__image" alt="Latest Blog" title="Latest Blog">
+                <div class="blog__buttons">
+                  <a href="#popup" class="blog__button blog__zoom popup-link" title="Click to view Full Image">
+                    <i class="fa fa-search-plus"></i>
+                  </a>
+                  <a href="#0" class="blog__button blog__link" title="Click to view Read More ">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="blog__content">
+                <time datetime="2018-09-18" title="Date of publication" class="blog__date">18, 09, 2018</time>
+                <h4 class="blog__subtitle">
+                  <a href="#0" title="Nullam ullamcorper nisl quis ornare molestie">
                   Nullam ullamcorper nisl quis ornare molestie
                 </a>
-              </h4>
-            </div>
-          </section>
-          <!-- ! Slide 4 -->
-          <section class="swiper-slide blog__slide">
-            <div href="#0" class="blog__image-box">
-              <img src="img/blog-4.jpg" class="blog__image" alt="Latest Blog" title="Latest Blog">
-              <div class="blog__buttons">
-                <a href="#popup" class="blog__button blog__zoom popup-link" title="Click to view Full Image">
-                  <i class="fa fa-search-plus"></i>
-                </a>
-                <a href="#0" class="blog__button blog__link" title="Click to view Read More ">
-                  <i class="fa fa-link"></i>
-                </a>
+                </h4>
               </div>
-            </div>
-            <div class="blog__content">
-              <time datetime="2018-09-18" title="Date of publication" class="blog__date">18, 09, 2018</time>
-              <h4 class="blog__subtitle">
-                <a href="#0" title="Turpis at eleifend ps mi elit Aenean porta ac sed faucibus">
+            </section>
+            <!-- ! Slide 4 -->
+            <section class="swiper-slide blog__slide">
+              <div href="#0" class="blog__image-box">
+                <img src="img/blog-4.jpg" class="blog__image" alt="Latest Blog" title="Latest Blog">
+                <div class="blog__buttons">
+                  <a href="#popup" class="blog__button blog__zoom popup-link" title="Click to view Full Image">
+                    <i class="fa fa-search-plus"></i>
+                  </a>
+                  <a href="#0" class="blog__button blog__link" title="Click to view Read More ">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="blog__content">
+                <time datetime="2018-09-18" title="Date of publication" class="blog__date">18, 09, 2018</time>
+                <h4 class="blog__subtitle">
+                  <a href="#0" title="Turpis at eleifend ps mi elit Aenean porta ac sed faucibus">
                   Turpis at eleifend ps mi elit Aenean porta ac sed faucibus
                 </a>
-              </h4>
-            </div>
-          </section>
-          <!-- ! Slide 5 -->
-          <section class="swiper-slide blog__slide">
-            <div href="#0" class="blog__image-box">
-              <img src="img/blog-5.jpg" class="blog__image" alt="Latest Blog" title="Latest Blog">
-              <div class="blog__buttons">
-                <a href="#popup" class="blog__button blog__zoom popup-link" title="Click to view Full Image">
-                  <i class="fa fa-search-plus"></i>
-                </a>
-                <a href="#0" class="blog__button blog__link" title="Click to view Read More ">
-                  <i class="fa fa-link"></i>
-                </a>
+                </h4>
               </div>
-            </div>
-            <div class="blog__content">
-              <time datetime="2018-09-18" title="Date of publication" class="blog__date">18, 09, 2018</time>
-              <h4 class="blog__subtitle">
-                <a href="#0" title="Morbi condimentum molestie Nam enim odio sodales">
+            </section>
+            <!-- ! Slide 5 -->
+            <section class="swiper-slide blog__slide">
+              <div href="#0" class="blog__image-box">
+                <img src="img/blog-5.jpg" class="blog__image" alt="Latest Blog" title="Latest Blog">
+                <div class="blog__buttons">
+                  <a href="#popup" class="blog__button blog__zoom popup-link" title="Click to view Full Image">
+                    <i class="fa fa-search-plus"></i>
+                  </a>
+                  <a href="#0" class="blog__button blog__link" title="Click to view Read More ">
+                    <i class="fa fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="blog__content">
+                <time datetime="2018-09-18" title="Date of publication" class="blog__date">18, 09, 2018</time>
+                <h4 class="blog__subtitle">
+                  <a href="#0" title="Morbi condimentum molestie Nam enim odio sodales">
                   Morbi condimentum molestie Nam enim odio sodales
                 </a>
-              </h4>
-            </div>
-          </section>
+                </h4>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <aside class="popup" id="popup">
-    <div class="popup__body">
-      <div class="popup__content">
-        <button type="button" class="popup__close">
+    <aside class="popup" id="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <button type="button" class="popup__close">
           <span class="visually-hidden">Закрыть слайдер</span>
         </button>
-        <div class="popup__img">
-          <img src="img/blog-2.jpg" alt="Большое фото (слайдер)">
-        </div>
-        <div class="popup__nav popup__prev">
-          <img src="img/arrow.png" alt="Show previous image">
-        </div>
-        <div class="popup__nav popup__next">
-          <img src="img/arrow.png" alt="Show the following image">
-        </div>
-        <div class="popup__details">
-          <div class="popup__description">Click to view Full Image</div>
-          <div class="popup__counter">Image <span class="popup__number">0</span> of <span class="popup__total">0</span></div>
+          <div class="popup__img">
+            <img src="img/blog-2.jpg" alt="Большое фото (слайдер)">
+          </div>
+          <div class="popup__nav popup__prev">
+            <img src="img/arrow.png" alt="Show previous image">
+          </div>
+          <div class="popup__nav popup__next">
+            <img src="img/arrow.png" alt="Show the following image">
+          </div>
+          <div class="popup__details">
+            <div class="popup__description">Click to view Full Image</div>
+            <div class="popup__counter">Image <span class="popup__number">0</span> of <span class="popup__total">0</span></div>
+          </div>
         </div>
       </div>
-    </div>
-  </aside>
+    </aside>
 
-  <div class="advantage">
-    <ul class="advantage__wrapper">
-      <li class="advantage__card">
-        <div class="advantage__image advantage__image_1"></div>
-        <div class="advantage__content">
-          <h5 class="advantage__title">
-            <a href="#0">
+    <div class="advantage">
+      <ul class="advantage__wrapper block-wrapper">
+        <li class="advantage__card">
+          <div class="advantage__image advantage__image_1"></div>
+          <div class="advantage__content">
+            <h5 class="advantage__title">
+              <a href="#0">
             Free World Delivery
             </a>
-          </h5>
-          <div class="advantage__subtitle">Orders Over $100</div>
-        </div>
-      </li>
-      <li class="advantage__card">
-        <div class="advantage__image advantage__image_2"></div>
-        <div class="advantage__content">
-          <h5 class="advantage__title">
-            <a href="#0">
+            </h5>
+            <div class="advantage__subtitle">Orders Over $100</div>
+          </div>
+        </li>
+        <li class="advantage__card">
+          <div class="advantage__image advantage__image_2"></div>
+          <div class="advantage__content">
+            <h5 class="advantage__title">
+              <a href="#0">
               Money Back Guarantee
             </a>
-          </h5>
-          <div class="advantage__subtitle">With a 30 day</div>
-        </div>
-      </li>
-      <li class="advantage__card">
-        <div class="advantage__image advantage__image_3"></div>
-        <div class="advantage__content">
-          <h5 class="advantage__title">
-            <a href="#0">
+            </h5>
+            <div class="advantage__subtitle">With a 30 day</div>
+          </div>
+        </li>
+        <li class="advantage__card">
+          <div class="advantage__image advantage__image_3"></div>
+          <div class="advantage__content">
+            <h5 class="advantage__title">
+              <a href="#0">
               Best Online Support
             </a>
-          </h5>
-          <div class="advantage__subtitle">Hours: 8AM - 11PM</div>
-        </div>
-      </li>
-      <li class="advantage__card">
-        <div class="advantage__image advantage__image_4"></div>
-        <div class="advantage__content">
-          <h5 class="advantage__title">
-            <a href="#0">
+            </h5>
+            <div class="advantage__subtitle">Hours: 8AM - 11PM</div>
+          </div>
+        </li>
+        <li class="advantage__card">
+          <div class="advantage__image advantage__image_4"></div>
+          <div class="advantage__content">
+            <h5 class="advantage__title">
+              <a href="#0">
               East & Free Returns
             </a>
-          </h5>
-          <div class="advantage__subtitle">Hours: 8AM - 11PM</div>
-        </div>
-      </li>
-    </ul>
-  </div>
+            </h5>
+            <div class="advantage__subtitle">Hours: 8AM - 11PM</div>
+          </div>
+        </li>
+      </ul>
+    </div>
 
-  <div class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__container">
-        <address class="footer__spoiler">
+    <div class="footer">
+      <div class="footer__wrapper block-wrapper block-wrapper_padding">
+        <div class="footer__container">
+          <address class="footer__spoiler footer__spoiler_1">
           <h5 class="footer__title spoiler-toggle">Store information</h5>
           <span class="menu__arrow footer__arrow spoiler-toggle"></span>
           <ul class="footer__list">
@@ -1561,120 +1669,121 @@
             </li>
           </ul>
         </address>
-        <div class="footer__spoiler">
-          <h5 class="footer__title spoiler-toggle">Information</h5>
-          <span class="menu__arrow footer__arrow spoiler-toggle"></span>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#0" class="footer__link">About Us</a>
-            </li>
-            <li class="footer__item">
-              <a href="#0" class="footer__link">Delivery Information</a>
-            </li>
-            <li class="footer__item">
-              <a href="#0" class="footer__link">Privacy Policy</a>
-            </li>
-            <li class="footer__item">
-              <a href="#0" class="footer__link">Terms & Conditions</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__spoiler">
-          <h5 class="footer__title spoiler-toggle">My Account</h5>
-          <span class="menu__arrow footer__arrow spoiler-toggle"></span>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#0" class="footer__link">My Account</a>
-            </li>
-            <li class="footer__item">
-              <a href="#0" class="footer__link">Specials</a>
-            </li>
-            <li class="footer__item">
-              <a href="#0" class="footer__link">Contact Us</a>
-            </li>
-            <li class="footer__item">
-              <a href="#0" class="footer__link">Site Map</a>
-            </li>
-            <li class="footer__item">
-              <a href="#0" class="footer__link">Brands</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__last-container">
-          <div class="footer__spoiler">
-            <h5 class="footer__title spoiler-toggle">Sign Up for Newsletter</h5>
+          <div class="footer__spoiler footer__spoiler_2">
+            <h5 class="footer__title spoiler-toggle">Information</h5>
             <span class="menu__arrow footer__arrow spoiler-toggle"></span>
-            <form action="#" method="POST" class="footer__list footer__form">
-              <input type="email" name="email" id="email" placeholder="E-Mail" class="footer__email">
-              <button type="button" class="footer__button">
-          Subscribe
-          <span class="visually-hidden">Подписаться на рассылку</span>
-        </button>
-            </form>
-          </div>
-          <div class="footer__spoiler">
-            <h5 class="footer__title spoiler-toggle">Social media</h5>
-            <span class="menu__arrow footer__arrow spoiler-toggle"></span>
-            <ul class="footer__list footer__socials">
+            <ul class="footer__list">
               <li class="footer__item">
-                <a href="#0" class="footer__social">
-                  <i class="fa fa-facebook"></i>
-                  <span class="visually-hidden">Facebook</span>
-                </a>
+                <a href="#0" class="footer__link">About Us</a>
               </li>
               <li class="footer__item">
-                <a href="#0" class="footer__social">
-                  <i class="fa fa-google"></i>
-                  <span class="visually-hidden">Google</span>
-                </a>
+                <a href="#0" class="footer__link">Delivery Information</a>
               </li>
               <li class="footer__item">
-                <a href="#0" class="footer__social">
-                  <i class="fa fa-twitter"></i>
-                  <span class="visually-hidden">Twitter</span>
-                </a>
+                <a href="#0" class="footer__link">Privacy Policy</a>
               </li>
               <li class="footer__item">
-                <a href="#0" class="footer__social">
-                  <i class="fa fa-pinterest"></i>
-                  <span class="visually-hidden">Pinterest</span>
-                </a>
-              </li>
-              <li class="footer__item">
-                <a href="#0" class="footer__social">
-                  <i class="fa fa-instagram"></i>
-                  <span class="visually-hidden">Instagram</span>
-                </a>
+                <a href="#0" class="footer__link">Terms & Conditions</a>
               </li>
             </ul>
           </div>
+          <div class="footer__spoiler footer__spoiler_3">
+            <h5 class="footer__title spoiler-toggle">My Account</h5>
+            <span class="menu__arrow footer__arrow spoiler-toggle"></span>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#0" class="footer__link">My Account</a>
+              </li>
+              <li class="footer__item">
+                <a href="#0" class="footer__link">Specials</a>
+              </li>
+              <li class="footer__item">
+                <a href="#0" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#0" class="footer__link">Site Map</a>
+              </li>
+              <li class="footer__item">
+                <a href="#0" class="footer__link">Brands</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__last-container">
+            <div class="footer__spoiler footer__spoiler_4">
+              <h5 class="footer__title spoiler-toggle">Sign Up for Newsletter</h5>
+              <span class="menu__arrow footer__arrow spoiler-toggle"></span>
+              <form action="#" method="POST" class="footer__list footer__form">
+                <input type="email" name="email" id="email" placeholder="E-Mail" class="footer__email">
+                <button type="button" class="footer__button">
+          Subscribe
+          <span class="visually-hidden">Подписаться на рассылку</span>
+        </button>
+              </form>
+            </div>
+            <div class="footer__spoiler footer__spoiler_5">
+              <h5 class="footer__title spoiler-toggle">Social media</h5>
+              <span class="menu__arrow footer__arrow spoiler-toggle"></span>
+              <ul class="footer__list footer__socials">
+                <li class="footer__item">
+                  <a href="#0" class="footer__social">
+                    <i class="fa fa-facebook"></i>
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#0" class="footer__social">
+                    <i class="fa fa-google"></i>
+                    <span class="visually-hidden">Google</span>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#0" class="footer__social">
+                    <i class="fa fa-twitter"></i>
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#0" class="footer__social">
+                    <i class="fa fa-pinterest"></i>
+                    <span class="visually-hidden">Pinterest</span>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#0" class="footer__social">
+                    <i class="fa fa-instagram"></i>
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <span>Powered By <a href="#0">OpenCart</a> Your Store © 2021</span>
+          <ul class="footer__payments">
+            <li class="footer__pay">
+              <img src="img/pay-1.png" alt="discover" title="discover">
+              <span class="visually-hidden">discover</span>
+            </li>
+            <li class="footer__pay">
+              <img src="img/pay-2.png" alt="google" title="google">
+              <span class="visually-hidden">google</span>
+            </li>
+            <li class="footer__pay">
+              <img src="img/pay-3.png" alt="maestro" title="maestro">
+              <span class="visually-hidden">maestro</span>
+            </li>
+            <li class="footer__pay">
+              <img src="img/pay-4.png" alt="mastercard" title="mastercard">
+              <span class="visually-hidden">mastercard</span>
+            </li>
+            <li class="footer__pay">
+              <img src="img/pay-5.png" alt="paypal" title="paypal">
+              <span class="visually-hidden">paypal</span>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer__copyright">
-        <span>Powered By <a href="#0">OpenCart</a> Your Store © 2021</span>
-      </div>
-      <ul class="footer__payments">
-        <li class="footer__pay">
-          <img src="img/pay-1.png" alt="discover" title="discover">
-          <span class="visually-hidden">discover</span>
-        </li>
-        <li class="footer__pay">
-          <img src="img/pay-2.png" alt="google" title="google">
-          <span class="visually-hidden">google</span>
-        </li>
-        <li class="footer__pay">
-          <img src="img/pay-3.png" alt="maestro" title="maestro">
-          <span class="visually-hidden">maestro</span>
-        </li>
-        <li class="footer__pay">
-          <img src="img/pay-4.png" alt="mastercard" title="mastercard">
-          <span class="visually-hidden">mastercard</span>
-        </li>
-        <li class="footer__pay">
-          <img src="img/pay-5.png" alt="paypal" title="paypal">
-          <span class="visually-hidden">paypal</span>
-        </li>
-      </ul>
     </div>
   </div>
 
@@ -1684,6 +1793,7 @@
   <script src="js/swiper.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/zoomer.js"></script>
+  <script src="js/buttonUp.js"></script>
 </body>
 
 </html>

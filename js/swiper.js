@@ -21,6 +21,10 @@ new Swiper('.banner__slider', {
     delay: 2500,
     disableOnInteraction: true,
   },
+  // Обновление при изменении элелментов
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
 });
 
 new Swiper('.product__slider', {
@@ -41,6 +45,20 @@ new Swiper('.product__slider', {
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
+  breakpoints: {
+    397: {
+      slidesPerView: 2,
+    },
+    651: {
+      slidesPerView: 3,
+    },
+    980: {
+      slidesPerView: 4,
+    },
+    1450: {
+      slidesPerView: 5,
+    },
+  },
 });
 
 new Swiper('.special__slider', {
@@ -57,6 +75,20 @@ new Swiper('.special__slider', {
   loop: true,
   // Отсутупы между слайдами
   spaceBetween: 30,
+  breakpoints: {
+    397: {
+      slidesPerView: 2,
+    },
+    651: {
+      slidesPerView: 3,
+    },
+    980: {
+      slidesPerView: 4,
+    },
+    1450: {
+      slidesPerView: 5,
+    },
+  },
 });
 
 new Swiper('.shop__slider', {
@@ -73,6 +105,26 @@ new Swiper('.shop__slider', {
   loop: true,
   // Отсутупы между слайдами
   spaceBetween: 30,
+  breakpoints: {
+    397: {
+      slidesPerView: 2,
+    },
+    597: {
+      slidesPerView: 3,
+    },
+    980: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+    1450: {
+      slidesPerView: 6,
+    },
+  },
 });
 
 const blogSlider = new Swiper('.blog__slider', {
@@ -95,4 +147,15 @@ const blogSlider = new Swiper('.blog__slider', {
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
+  breakpoints: {
+    497: {
+      slidesPerView: 2,
+    },
+    997: {
+      slidesPerView: 3,
+    },
+    1217: {
+      slidesPerView: 4,
+    },
+  },
 });

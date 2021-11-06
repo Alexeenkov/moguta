@@ -25,18 +25,45 @@ for (let arrow of arrowsHeader) {
   });
 }
 
-// слушаем нажатие на любую стрелочку в футере, либо заголовок
+// Слушаем изменение размеров экрана, при ширине меньше 979px активируем спойлеры в футере:
+const matchMediaMaxWidth = window.matchMedia("(max-width: 979px)");
+
+matchMediaMaxWidth.addEventListener('change', () => {
+  if (matchMediaMaxWidth.matches) {
+    for (let btn of footerSpoilerBtn) {
+      btn.addEventListener('click', toggleMenuFooter);
+    }
+  }
+});
+
+function toggleMenuFooter(e) {
+  // При нажатии на стрелку или заголовок находим соседнее выпадающее меню:
+  let dropMenu = e.target.closest('.footer__spoiler').querySelector('.footer__list');
+  e.target.classList.toggle('_active');
+  showDropdownMenu(dropMenu, e.target);
+}
+
+// Слушаем изменение размеров экрана, при ширине больше 980px снимаем обработчик события с кнопок футера:
+const matchMediaMinWidth = window.matchMedia("(min-width: 980px)");
+
+matchMediaMinWidth.addEventListener('change', () => {
+  if (matchMediaMinWidth.matches) {
+    for (let btn of footerSpoilerBtn) {
+      btn.removeEventListener('click', toggleMenuFooter);
+    }
+  }
+});
+
 for (let btn of footerSpoilerBtn) {
-  btn.addEventListener('click', (e) => {
-    // При нажатии на стрелку или заголовок находим соседнее выпадающее меню:
-    let dropMenu = e.target.closest('.footer__spoiler').querySelector('.footer__list');
-    e.target.classList.toggle('_active');
-    showDropdownMenu(dropMenu);
-  });
+  if (matchMediaMaxWidth.matches) {
+    btn.addEventListener('click', toggleMenuFooter);
+  } else {
+    btn.removeEventListener('click', toggleMenuFooter);
+  }
 }
 
 // Функция показывает выпадающее меню в зависимости от переданного элемента:
-function showDropdownMenu(elem) {
+function showDropdownMenu(elem, target) {
   if (elem.classList.contains('_active')) {
     // Скрываем выпадающее меню
     elem.classList.remove('_active');
@@ -46,7 +73,7 @@ function showDropdownMenu(elem) {
     elem.classList.add('_active');
     // Пересчитываем высоту выпадающего меню:
     elem.style.maxHeight = elem.scrollHeight + 'px';
-    if (elem !== menu && elem !== account && elem !== account) {
+    if (elem !== menu && elem !== account && target === undefined) {
       // Выпадающее меню-родитель:
       let parentMenu = elem.closest('.menu__item').querySelector('.menu__dropdown');
       // При нажатии на стрелки пересчитываем высоту главного меню:
