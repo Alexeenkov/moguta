@@ -1510,6 +1510,8 @@ html.lock {
 }
 .footer__image img {
 		max-width: 25px;
+		height: auto;
+		width: 25px;
 }
 .footer__link {
 		position: relative;

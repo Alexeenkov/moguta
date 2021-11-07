@@ -1394,6 +1394,8 @@ $color-purple: #9174ce;
     margin-right: 10px;
     & img {
       max-width: 25px;
+      height: auto;
+      width: 25px;
     }
   }
   &__link {
