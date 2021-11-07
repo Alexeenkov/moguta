@@ -796,19 +796,20 @@ html.lock {
 		right: -23px;
 }
 .product__slider {
-		position: absolute;
-		left: -100%;
-		top: 100%;
+		position: relative;
 		opacity: 0;
 		-webkit-transition: opacity 0.8s ease 0.2s;
 		transition: opacity 0.8s ease 0.2s;
 		padding-left: 10px;
 		padding-right: 10px;
+		visibility: hidden;
+		height: 0px;
+		overflow: hidden;
 }
 .product__slider._active {
-		position: relative;
-		left: 0;
+		height: auto;
 		opacity: 1;
+		visibility: visible;
 }
 .card {
 		-webkit-transition: all 0.3s;
