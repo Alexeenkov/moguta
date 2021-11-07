@@ -1,7 +1,6 @@
 /* ! ------------------------fonts-------------------- */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
 
 /* ! -------------------reset-styles------------------ */
 
@@ -29,6 +28,7 @@ li {
 
 img {
   vertical-align: top;
+  height: auto;
 }
 
 button {
@@ -76,10 +76,6 @@ $color-grey: #939393;
 $color-purple: #9174ce;
 
 /* ! ------------------------styles------------------ */
-
-.wrapper {
-  // padding: 0 15px;
-}
 
 .visually-hidden {
   position: absolute;
@@ -569,7 +565,6 @@ $color-purple: #9174ce;
       display: block;
       max-width: 100%;
       width: 100%;
-      height: auto;
     }
   }
   &__pagination {}
@@ -753,10 +748,10 @@ $color-purple: #9174ce;
     }
   }
   &__prev {
-    right: 10px;
+    right: 13px;
   }
   &__next {
-    right: -23px;
+    right: -20px;
   }
   &__slider {
     position: relative;
@@ -998,10 +993,10 @@ $color-purple: #9174ce;
     bottom: -5px;
   }
   &__prev {
-    right: 10px;
+    right: 13px;
   }
   &__next {
-    right: -23px;
+    right: -20px;
   }
   &__slider {
     padding-left: 10px;

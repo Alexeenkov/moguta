@@ -1,6 +1,5 @@
 /* ! ------------------------fonts-------------------- */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap");
 /* ! -------------------reset-styles------------------ */
 * {
 		margin: 0;
@@ -27,6 +26,7 @@ li {
 
 img {
 		vertical-align: top;
+		height: auto;
 }
 
 button {
@@ -577,7 +577,6 @@ html.lock {
 		display: block;
 		max-width: 100%;
 		width: 100%;
-		height: auto;
 }
 .banner__prev {
 		display: none;
@@ -790,10 +789,10 @@ html.lock {
 		color: #c9c9c9;
 }
 .product__prev {
-		right: 10px;
+		right: 13px;
 }
 .product__next {
-		right: -23px;
+		right: -20px;
 }
 .product__slider {
 		position: relative;
@@ -1051,10 +1050,10 @@ html.lock {
 		bottom: -5px;
 }
 .special__prev {
-		right: 10px;
+		right: 13px;
 }
 .special__next {
-		right: -23px;
+		right: -20px;
 }
 .special__slider {
 		padding-left: 10px;
